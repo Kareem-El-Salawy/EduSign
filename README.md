@@ -449,15 +449,13 @@ Developed by the EduSign graduation project team at:
 
 Team members:
 
-Ziad Anwar
-
-Kareem Moomen
-
-Ahamd Reda
+*Ziad Anwar
+*Kareem Moomen
+*Ahamd Reda
 
 Supervisor:
 
-Prof. Medhat Awadallah 
+*Prof. Medhat Awadallah 
 
 ---
 
