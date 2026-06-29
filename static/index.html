@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Local Sign Learning Lab</title>
+  <link rel="stylesheet" href="/static/css/app.css?v=20260620-1">
+</head>
+<body>
+  <div class="container fadeIn">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Local Sign Learning Lab</h1>
+          <p>Offline sign education toolkit</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a class="pill" data-nav href="/">Home</a>
+        <a class="pill" data-nav href="/sign-to-text">Sign → Text</a>
+        <a class="pill" data-nav href="/text-to-sign">Text → Sign</a>
+        <a class="pill" data-nav href="/video-lookup">Video Lookup</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h2>Learn, recognize, and search signs — fully offline.</h2>
+        <p>
+          A minimal local-only platform for sign language education. No accounts, no cloud, no tracking.
+          Just fast tools: recognition, generation, and a searchable sign library.
+        </p>
+        <div class="kbd">
+          Shortcuts:
+          <span class="k">1</span> Sign→Text
+          <span class="k">2</span> Text→Sign
+          <span class="k">3</span> Lookup
+        </div>
+        <div class="glowline"></div>
+      </div>
+
+      <div class="card" style="min-height: 160px;">
+        <div class="inner">
+          <div class="badge">Local-only • Offline • Minimal</div>
+          <h3 style="margin-top:12px;">Pick a task</h3>
+          <p>Start with live recognition or explore signs from your local library.</p>
+          <div class="ctaRow" style="margin-top:16px;">
+            <span>Click a banner below</span>
+            <span class="arrow">↘</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <a class="card" href="/sign-to-text">
+        <div class="inner">
+          <div class="badge">🖐️ Live • Camera • Gloss</div>
+          <h3>Sign → Text</h3>
+          <p>Recognize signs from camera input and output gloss + English (with optional TTS).</p>
+          <div class="ctaRow">
+            <span><span class="k">1</span> Open</span>
+            <span class="arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="/text-to-sign">
+        <div class="inner">
+          <div class="badge">💬 Convert • Sequence</div>
+          <h3>Text → Sign</h3>
+          <p>Convert text into a gloss sequence and display corresponding sign assets.</p>
+          <div class="ctaRow">
+            <span><span class="k">2</span> Open</span>
+            <span class="arrow">→</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="card" href="/video-lookup">
+        <div class="inner">
+          <div class="badge">🎞️ Search • Library</div>
+          <h3>Sign Video Lookup</h3>
+          <p>Search a local sign library by gloss, meaning, or tags and play videos instantly.</p>
+          <div class="ctaRow">
+            <span><span class="k">3</span> Open</span>
+            <span class="arrow">→</span>
+          </div>
+        </div>
+      </a>
+    </section>
+  </div>
+
+  <script src="/static/js/app.js?v=20260620-1"></script>
+</body>
+</html>

@@ -1,0 +1,526 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Video Lookup • Local Sign Learning Lab</title>
+  <link rel="stylesheet" href="/static/css/app.css">
+  <style>
+    /* ── Search bar ──────────────────────────────────────────── */
+    .searchWrap {
+      position: relative;
+      margin-top: 20px;
+    }
+    .searchIcon {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 18px;
+      opacity: .55;
+      pointer-events: none;
+      line-height: 1;
+    }
+    #searchInput {
+      width: 100%;
+      padding: 16px 48px 16px 48px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      font-size: 18px;
+      font-family: inherit;
+      outline: none;
+      transition: border-color .18s ease, box-shadow .18s ease;
+    }
+    #searchInput:focus {
+      border-color: rgba(76,201,240,.5);
+      box-shadow: 0 0 0 3px rgba(76,201,240,.10);
+    }
+    #searchInput::placeholder { color: var(--muted2); }
+    .clearBtn {
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: var(--muted2);
+      font-size: 20px;
+      cursor: pointer;
+      padding: 4px 8px;
+      display: none;
+      line-height: 1;
+    }
+    .clearBtn:hover { color: var(--text); }
+
+    /* ── Stats bar ───────────────────────────────────────────── */
+    .statsBar {
+      margin-top: 10px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .statChip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .statChip strong { color: var(--text); }
+    .nlpChip {
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      border: 1px solid;
+    }
+    .nlpChip.on  { border-color: rgba(52,211,153,.4);  color: rgba(52,211,153,.9);  background: rgba(52,211,153,.08); }
+    .nlpChip.off { border-color: rgba(245,158,11,.35); color: rgba(245,158,11,.85); background: rgba(245,158,11,.06); }
+
+    /* ── Results header ──────────────────────────────────────── */
+    .resultsHeader {
+      margin-top: 26px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .resultsHeader h3 {
+      margin: 0;
+      font-size: 14px;
+      color: var(--muted);
+      font-weight: 600;
+      letter-spacing: .3px;
+      text-transform: uppercase;
+    }
+    .resultsCount {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 12px;
+      color: var(--muted2);
+    }
+
+    /* ── Results grid ────────────────────────────────────────── */
+    .resultsGrid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 16px;
+    }
+    @media (max-width: 640px) {
+      .resultsGrid { grid-template-columns: 1fr; }
+    }
+
+    /* ── Result card ─────────────────────────────────────────── */
+    .resultCard {
+      border-radius: var(--r);
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.04));
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .cardHead {
+      padding: 12px 14px 10px;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .glossName {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: .3px;
+      text-transform: uppercase;
+    }
+    .cardMeta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .matchBadge {
+      padding: 3px 8px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 600;
+      border: 1px solid;
+      text-transform: uppercase;
+      letter-spacing: .4px;
+    }
+    .matchBadge.exact       { border-color: rgba(52,211,153,.45);  color: rgba(52,211,153,.95);  background: rgba(52,211,153,.10); }
+    .matchBadge.morphological{ border-color: rgba(76,201,240,.45); color: rgba(76,201,240,.95);  background: rgba(76,201,240,.10); }
+    .matchBadge.prefix      { border-color: rgba(76,201,240,.35);  color: rgba(76,201,240,.80);  background: rgba(76,201,240,.07); }
+    .matchBadge.fuzzy       { border-color: rgba(245,158,11,.40);  color: rgba(245,158,11,.90);  background: rgba(245,158,11,.08); }
+    .matchBadge.synonym     { border-color: rgba(181,23,255,.45);  color: rgba(181,23,255,.95);  background: rgba(181,23,255,.10); }
+    .matchBadge.default     { border-color: var(--border);         color: var(--muted);                                           }
+    .scoreLabel {
+      font-size: 11px;
+      color: var(--muted2);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    /* ── Video area ──────────────────────────────────────────── */
+    .videoArea {
+      position: relative;
+      background: rgba(0,0,0,.3);
+    }
+    .videoArea video {
+      width: 100%;
+      display: block;
+      max-height: 300px;
+      object-fit: contain;
+      background: #000;
+    }
+    .videoNav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 12px;
+      background: rgba(0,0,0,.25);
+      border-top: 1px solid rgba(255,255,255,.06);
+    }
+    .navBtn {
+      appearance: none;
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.14);
+      color: var(--text);
+      padding: 5px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 13px;
+      transition: background .15s ease;
+    }
+    .navBtn:hover  { background: rgba(255,255,255,.12); }
+    .navBtn:disabled { opacity: .35; cursor: not-allowed; }
+    .videoCounter {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* ── Empty / loading states ──────────────────────────────── */
+    .emptyState {
+      margin-top: 40px;
+      text-align: center;
+      color: var(--muted2);
+      font-size: 14px;
+      padding: 32px;
+    }
+    .emptyState .big { font-size: 36px; margin-bottom: 12px; }
+    .spinner {
+      display: inline-block;
+      width: 20px; height: 20px;
+      border: 2px solid rgba(255,255,255,.15);
+      border-top-color: rgba(76,201,240,.8);
+      border-radius: 50%;
+      animation: spin .7s linear infinite;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+  <div class="container fadeIn">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Local Sign Learning Lab</h1>
+          <p>Video Lookup</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a class="pill" data-nav href="/">Home</a>
+        <a class="pill" data-nav href="/sign-to-text">Sign → Text</a>
+        <a class="pill" data-nav href="/text-to-sign">Text → Sign</a>
+        <a class="pill" data-nav href="/video-lookup">Video Lookup</a>
+      </nav>
+    </header>
+
+    <div class="pageTitle" style="margin-top:24px;">
+      <div>
+        <h2>Sign Video Lookup</h2>
+        <p>Search 2,000 ASL signs by word, synonym, or related meaning.</p>
+      </div>
+      <div class="kbd">
+        <span class="k">/</span> Focus search
+        <span class="k">Esc</span> Clear
+      </div>
+    </div>
+
+    <!-- Search -->
+    <div class="searchWrap">
+      <span class="searchIcon">🔍</span>
+      <input
+        id="searchInput"
+        type="text"
+        placeholder='Search signs — try "drink", "beverage", "laptop", "family"…'
+        autocomplete="off"
+        autocorrect="off"
+        spellcheck="false"
+      />
+      <button class="clearBtn" id="clearBtn" title="Clear">×</button>
+    </div>
+
+    <!-- Stats -->
+    <div class="statsBar" id="statsBar">
+      <div class="statChip">
+        <strong id="glossCount">—</strong> signs
+      </div>
+      <div class="statChip">
+        <strong id="videoCount">—</strong> videos
+      </div>
+      <div id="nlpChips" style="display:flex; gap:6px; flex-wrap:wrap;"></div>
+    </div>
+
+    <!-- Results -->
+    <div class="resultsHeader" id="resultsHeader" style="display:none;">
+      <h3 id="resultsLabel">Results</h3>
+      <span class="resultsCount" id="resultsCount"></span>
+    </div>
+    <div class="resultsGrid" id="resultsGrid"></div>
+    <div id="emptyState" class="emptyState" style="display:none;"></div>
+  </div>
+
+  <script src="/static/js/app.js"></script>
+  <script>
+  // ── Elements ────────────────────────────────────────────────────────────
+  const input       = document.getElementById('searchInput');
+  const clearBtn    = document.getElementById('clearBtn');
+  const glossCount  = document.getElementById('glossCount');
+  const videoCount  = document.getElementById('videoCount');
+  const nlpChips    = document.getElementById('nlpChips');
+  const resultsHeader = document.getElementById('resultsHeader');
+  const resultsLabel  = document.getElementById('resultsLabel');
+  const resultsCount  = document.getElementById('resultsCount');
+  const resultsGrid   = document.getElementById('resultsGrid');
+  const emptyState    = document.getElementById('emptyState');
+
+  // ── State ───────────────────────────────────────────────────────────────
+  let debounceTimer = null;
+  let lastQuery = null;
+  let loading = false;
+
+  // ── Boot: fetch stats ────────────────────────────────────────────────────
+  async function loadStats() {
+    try {
+      const r = await fetch('/api/videos?q=&limit=1');
+      const d = await r.json();
+      if (d.stats) {
+        glossCount.textContent = d.stats.gloss_count.toLocaleString();
+        videoCount.textContent = d.stats.video_count.toLocaleString();
+        renderNlpChips(d.stats.nlp);
+      }
+    } catch (_) {}
+  }
+
+  function renderNlpChips(nlp) {
+    nlpChips.innerHTML = '';
+    if (!nlp) return;
+    const items = [
+      { key: 'rapidfuzz', on: 'rapidfuzz: fuzzy',        off: 'rapidfuzz: missing (pip install rapidfuzz)' },
+      { key: 'wordnet',   on: 'wordnet: synonyms',        off: 'wordnet: missing (pip install nltk)' },
+    ];
+    for (const item of items) {
+      const chip = document.createElement('span');
+      chip.className = 'nlpChip ' + (nlp[item.key] ? 'on' : 'off');
+      chip.textContent = nlp[item.key] ? item.on : item.off;
+      chip.title = nlp[item.key]
+        ? item.key + ' enabled'
+        : 'Install: pip install ' + item.key + ' — then restart the server';
+      nlpChips.appendChild(chip);
+    }
+  }
+
+  // ── Search ───────────────────────────────────────────────────────────────
+  function triggerSearch(q) {
+    clearTimeout(debounceTimer);
+    if (q === lastQuery) return;
+    if (!q.trim()) {
+      clearResults();
+      return;
+    }
+    debounceTimer = setTimeout(() => doSearch(q.trim()), 380);
+  }
+
+  async function doSearch(q) {
+    if (loading) return;
+    loading = true;
+    lastQuery = q;
+
+    setLoading(true);
+    try {
+      const r = await fetch(`/api/videos?q=${encodeURIComponent(q)}&limit=12`);
+      const d = await r.json();
+      if (d.error) { showEmpty('⚠️ Server error: ' + d.error); return; }
+      renderResults(q, d);
+    } catch (e) {
+      showEmpty('⚠️ Network error: ' + e.message);
+    } finally {
+      loading = false;
+      setLoading(false);
+    }
+  }
+
+  // ── Render ───────────────────────────────────────────────────────────────
+  function renderResults(q, data) {
+    resultsGrid.innerHTML = '';
+    resultsHeader.style.display = '';
+
+    if (!data.results || data.results.length === 0) {
+      showEmpty(`No signs found for "<strong>${esc(q)}</strong>". Try a different word or check spelling.`);
+      resultsLabel.textContent = 'Results';
+      resultsCount.textContent = '0 matches';
+      return;
+    }
+
+    emptyState.style.display = 'none';
+    resultsLabel.textContent = `Results for "${q}"`;
+    resultsCount.textContent = `${data.results.length} match${data.results.length !== 1 ? 'es' : ''}`;
+
+    for (const res of data.results) {
+      resultsGrid.appendChild(buildCard(res));
+    }
+  }
+
+  function buildCard(res) {
+    const card = document.createElement('div');
+    card.className = 'resultCard';
+
+    const badgeClass = normBadgeClass(res.match_type);
+
+    card.innerHTML = `
+      <div class="cardHead">
+        <span class="glossName">${esc(res.gloss)}</span>
+        <div class="cardMeta">
+          <span class="matchBadge ${badgeClass}">${esc(res.match_type.replace('~', ' + '))}</span>
+          <span class="scoreLabel">${(res.score * 100).toFixed(0)}%</span>
+        </div>
+      </div>
+      <div class="videoArea">
+        <video
+          preload="metadata"
+          controls
+          playsinline
+          data-videos='${JSON.stringify(res.videos)}'
+          data-idx="0"
+        ></video>
+      </div>
+      <div class="videoNav">
+        <button class="navBtn prev" ${res.videos.length <= 1 ? 'disabled' : ''}>◀ Prev</button>
+        <span class="videoCounter">
+          <span class="vcur">1</span> / <span class="vtot">${res.video_count}</span>
+          ${res.video_count > res.videos.length ? ` <span style="color:var(--muted2)">(showing ${res.videos.length})</span>` : ''}
+        </span>
+        <button class="navBtn next" ${res.videos.length <= 1 ? 'disabled' : ''}>Next ▶</button>
+      </div>
+    `;
+
+    const video  = card.querySelector('video');
+    const prevBtn = card.querySelector('.prev');
+    const nextBtn = card.querySelector('.next');
+    const vcur    = card.querySelector('.vcur');
+
+    // Load first video
+    const videos = res.videos;
+    let idx = 0;
+    video.src = videos[0];
+
+    function setVideo(i) {
+      idx = i;
+      video.src = videos[idx];
+      video.load();
+      vcur.textContent = idx + 1;
+      prevBtn.disabled = idx === 0;
+      nextBtn.disabled = idx === videos.length - 1;
+    }
+
+    prevBtn.addEventListener('click', () => { if (idx > 0) setVideo(idx - 1); });
+    nextBtn.addEventListener('click', () => { if (idx < videos.length - 1) setVideo(idx + 1); });
+
+    return card;
+  }
+
+  function normBadgeClass(type) {
+    if (type === 'exact')        return 'exact';
+    if (type === 'morphological')return 'morphological';
+    if (type === 'prefix')       return 'prefix';
+    if (type === 'fuzzy')        return 'fuzzy';
+    if (type.startsWith('synonym')) return 'synonym';
+    return 'default';
+  }
+
+  // ── UI state helpers ─────────────────────────────────────────────────────
+  function setLoading(on) {
+    if (on) {
+      resultsHeader.style.display = '';
+      resultsLabel.innerHTML = '<span class="spinner"></span>Searching…';
+      resultsCount.textContent = '';
+      resultsGrid.innerHTML = '';
+      emptyState.style.display = 'none';
+    }
+  }
+
+  function showEmpty(html) {
+    resultsGrid.innerHTML = '';
+    emptyState.style.display = '';
+    emptyState.innerHTML = `<div class="big">🤷</div>${html}`;
+  }
+
+  function clearResults() {
+    lastQuery = null;
+    resultsGrid.innerHTML = '';
+    resultsHeader.style.display = 'none';
+    emptyState.style.display = 'none';
+  }
+
+  function esc(s) {
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  // ── Event listeners ──────────────────────────────────────────────────────
+  input.addEventListener('input', () => {
+    const q = input.value;
+    clearBtn.style.display = q ? 'block' : 'none';
+    triggerSearch(q);
+  });
+
+  clearBtn.addEventListener('click', () => {
+    input.value = '';
+    clearBtn.style.display = 'none';
+    clearResults();
+    input.focus();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === '/' && document.activeElement !== input) {
+      e.preventDefault();
+      input.focus();
+      input.select();
+    }
+    if (e.key === 'Escape' && document.activeElement === input) {
+      input.value = '';
+      clearBtn.style.display = 'none';
+      clearResults();
+      input.blur();
+    }
+  });
+
+  // ── Init ────────────────────────────────────────────────────────────────
+  loadStats();
+  input.focus();
+  </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+PROJECT INTEGRATION DIAGNOSTIC AND FIXES
+
+TEXT-TO-SIGN ROOT CAUSES FOUND
+1. app/routers/text_to_sign.py used the literal string "api_key":
+   genai.Client(api_key="api_key")
+   It has been corrected to:
+   genai.Client(api_key=api_key)
+
+2. reqs.txt did not contain google-genai. It has been added.
+
+3. static/js/app.js and static/text_to_sign.html both declared:
+   let textToSignVideos
+   let currentVideoIndex
+   The duplicate declarations can stop the newer inline Text-to-Sign script from loading.
+   app.js now contains shared navigation code only.
+
+4. The backend now prints why Gemini was skipped or failed.
+
+SIGN-TO-TEXT APPEARANCE
+Only one sign_to_text.html and one app.css exist in the supplied ZIP.
+If the page still looks materially different from the version demonstrated by the teammate,
+then either:
+- a different HTML/CSS version was demonstrated but not included,
+- the browser was using cached CSS,
+- or screen size/browser zoom changed the responsive layout.
+
+Cache-busting parameters were added to CSS/JS links. Use Ctrl+F5 after starting the server.
+
+Hashes of the fixed files for comparison:
+static/sign_to_text.html SHA256: dd59e8f43559dba0f15cb1cc57b749ea1bab53946ae8e541f58a4d602edfddf6
+static/css/app.css SHA256: 78a8e82ca957bbf43e228683754c2f5438dd9eeb66d98ab1748260f0e28e4037
+
+MISSING FILES IN THE SUPPLIED ZIP
+- static/video_lookup.html
+- static/videos/asl_Thank_You.mp4
+- static/videos/asl_sorry.mp4
+- static/videos/asl_Friend.mp4
+- static/videos/asl_Help.mp4
+
+The missing video files are referenced by data/gloss_db.json and must be copied into static/videos.
+The missing video_lookup.html must be supplied if the Video Lookup page is required.
+
+HOW TO RUN
+1. Copy .env.example to .env.
+2. Put your own Gemini API key in .env.
+3. Run: python -m pip install -r reqs.txt
+4. Run: start_server.bat
+5. Open: http://127.0.0.1:8000/docs
+6. Test POST /api/text-to-sign.
+7. Open the page and press Ctrl+F5.

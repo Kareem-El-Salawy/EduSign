@@ -1,0 +1,36 @@
+```gitignore
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Secret and local configuration files
+.env
+.env.*
+!.env.example
+config.json
+
+# Editor settings
+.vscode/
+.idea/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.zip
+
+# Large local video dataset
+archive/videos/
+
+# Generated screenshots
+mediapipe_landmarks_screenshot.png
+mediapipe_full_landmarks.png
+```

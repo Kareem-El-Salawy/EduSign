@@ -1,0 +1,53 @@
+{
+  "hello": {
+    "gloss": "hello",
+    "video": "/static/videos/asl_Hello.mp4"
+  },
+  "hi": {
+    "gloss": "hello",
+    "video": "/static/videos/asl_Hello.mp4"
+  },
+  "i": {
+    "gloss": "I",
+    "video": "/static/videos/asl_I.mp4"
+  },
+  "me": {
+    "gloss": "I",
+    "video": "/static/videos/asl_I.mp4"
+  },
+  "please": {
+    "gloss": "please",
+    "video": "/static/videos/asl_please.mp4"
+  },
+  "thank you": {
+    "gloss": "thank you",
+    "video": "/static/videos/asl_Thank_You.mp4"
+  },
+  "thanks": {
+    "gloss": "thank you",
+    "video": "/static/videos/asl_Thank_You.mp4"
+  },
+    "sorry": {
+        "gloss": "sorry",
+        "video": "/static/videos/asl_sorry.mp4"
+    },
+
+    "water": {
+        "gloss": "water",
+        "video": "/static/videos/asl_Water.mp4"
+    },
+
+    "want": {
+        "gloss": "want",
+        "video": "/static/videos/asl_Want.mp4"
+    },
+    "friend": {
+        "gloss": "friend",
+        "video": "/static/videos/asl_Friend.mp4"
+    },
+    "help": {
+        "gloss": "help",
+        "video": "/static/videos/asl_Help.mp4"
+    }
+
+}

@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Sign → Text</title>
+  <link rel="stylesheet" href="/static/css/app.css?v=4">
+  <link rel="stylesheet" href="/static/css/sign_to_text.css?v=20260620-1">
+</head>
+<body class="s2t-body">
+  <div class="s2t-wrap fadeIn">
+
+    <a class="s2t-back" href="/" title="Home" aria-label="Home">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+    </a>
+
+    <button class="s2t-histbtn" id="histToggle" title="History" aria-label="History">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v5h5"/><path d="M3.05 13A9 9 0 1 0 6 5.3L3 8"/><path d="M12 7v5l4 2"/></svg>
+      <span id="histBadge" class="s2t-histbadge" hidden>0</span>
+    </button>
+
+    <h1 class="s2t-title">Sign&nbsp;→&nbsp;Text</h1>
+
+    <!-- Camera -->
+    <div id="previewWrap" class="s2t-preview mirrored">
+      <img id="preview" src="/preview.mjpg" alt="camera preview">
+      <div id="recDot" class="s2t-recdot" hidden></div>
+    </div>
+
+    <!-- State pill -->
+    <div id="statePill" class="s2t-state" hidden><span class="s2t-statedot"></span><span id="stateText">Listening</span></div>
+
+    <!-- Big output -->
+    <div class="s2t-output">
+      <div id="spoken" class="s2t-sentence">Press start, then sign one gloss at a time</div>
+      <div id="gloss" class="s2t-gloss s2t-chips"></div>
+      <div id="hintLine" class="s2t-hintline"></div>
+    </div>
+
+    <!-- Controls -->
+    <div class="s2t-controls">
+      <button id="toggleBtn" class="s2t-bigbtn start" aria-label="Start">
+        <svg class="ico-start" viewBox="0 0 24 24" width="46" height="46" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        <svg class="ico-stop"  viewBox="0 0 24 24" width="40" height="40" fill="currentColor" hidden><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+      </button>
+
+      <button id="ttsBtn" class="s2t-iconbtn on" aria-label="Toggle speech" title="Speech on/off">
+        <svg class="ico-spk-on" viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+        <svg class="ico-spk-off" viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" hidden><path d="M11 5 6 9H2v6h4l5 4z"/><line x1="22" y1="9" x2="16" y2="15"/><line x1="16" y1="9" x2="22" y2="15"/></svg>
+      </button>
+
+      <button id="mirrorBtn" class="s2t-iconbtn on" aria-label="Toggle mirror" title="Mirror preview">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M8 7 4 12l4 5"/><path d="m16 7 4 5-4 5"/></svg>
+      </button>
+    </div>
+
+    <div id="hint" class="s2t-hint">Bring your hands into frame to sign, lower them to finish. Tap a gloss to fix it. <span class="k">Space</span> = start / stop</div>
+  </div>
+
+  <!-- History drawer -->
+  <aside id="historyDrawer" class="s2t-drawer" hidden aria-label="Sentence history">
+    <div class="s2t-drawer-head">
+      <span class="s2t-drawer-title">History</span>
+      <div class="s2t-drawer-actions">
+        <button id="copyAllBtn" class="s2t-textbtn" title="Copy all sentences">Copy all</button>
+        <button id="clearHistBtn" class="s2t-textbtn" title="Clear history">Clear</button>
+        <button id="histClose" class="s2t-iconmini" title="Close" aria-label="Close">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+    <ul id="historyList" class="s2t-histlist"></ul>
+    <div id="historyEmpty" class="s2t-histempty">No sentences yet. Recognized sentences appear here.</div>
+  </aside>
+
+  <div id="toast" class="s2t-toast"></div>
+
+  <script>
+  (function(){
+    const previewWrap = document.getElementById('previewWrap');
+    const recDot   = document.getElementById('recDot');
+    const statePill= document.getElementById('statePill');
+    const stateText= document.getElementById('stateText');
+    const spokenEl = document.getElementById('spoken');
+    const glossEl  = document.getElementById('gloss');
+    const hintLine = document.getElementById('hintLine');
+    const toggleBtn= document.getElementById('toggleBtn');
+    const icoStart = toggleBtn.querySelector('.ico-start');
+    const icoStop  = toggleBtn.querySelector('.ico-stop');
+    const ttsBtn   = document.getElementById('ttsBtn');
+    const spkOn    = ttsBtn.querySelector('.ico-spk-on');
+    const spkOff   = ttsBtn.querySelector('.ico-spk-off');
+    const mirrorBtn= document.getElementById('mirrorBtn');
+    const hint     = document.getElementById('hint');
+    const histToggle = document.getElementById('histToggle');
+    const histBadge  = document.getElementById('histBadge');
+    const drawer     = document.getElementById('historyDrawer');
+    const histList   = document.getElementById('historyList');
+    const histEmpty  = document.getElementById('historyEmpty');
+    const copyAllBtn = document.getElementById('copyAllBtn');
+    const clearHistBtn = document.getElementById('clearHistBtn');
+    const histClose  = document.getElementById('histClose');
+    const toastEl    = document.getElementById('toast');
+
+    let ws = null, recording = false, ttsOn = true, reconnectTimer = null;
+    let lastSpokenText = "";
+    let glossArr = [];
+    let editing = false, pendingGloss = null;
+    const history = [];   // { text, t }
+
+    // ---------- Text-To-Speech ----------
+    function speak(text){
+      if (!ttsOn || !text || !('speechSynthesis' in window)) return;
+      try { const u = new SpeechSynthesisUtterance(text); u.rate=1; u.pitch=1; window.speechSynthesis.speak(u); } catch(e){}
+    }
+    function stopSpeech(){ try { window.speechSynthesis.cancel(); } catch(e){} }
+
+    // ---------- clipboard + toast ----------
+    function toast(msg){
+      toastEl.textContent = msg; toastEl.classList.add('show');
+      clearTimeout(toastEl._t); toastEl._t = setTimeout(()=>toastEl.classList.remove('show'), 1200);
+    }
+    async function copyText(text){
+      if (!text) return;
+      try { await navigator.clipboard.writeText(text); toast('Copied'); }
+      catch(e){
+        const ta=document.createElement('textarea'); ta.value=text;
+        ta.style.position='fixed'; ta.style.opacity='0'; document.body.appendChild(ta);
+        ta.select(); try{ document.execCommand('copy'); toast('Copied'); }catch(_){}
+        ta.remove();
+      }
+    }
+
+    // ---------- gloss chips (editable) ----------
+    function renderGloss(arr){
+      glossArr = Array.isArray(arr) ? arr.slice() : [];
+      if (editing){ pendingGloss = glossArr.slice(); return; }   // don't clobber an in-progress edit
+      glossEl.innerHTML = '';
+      glossArr.forEach((g, i) => {
+        const chip = document.createElement('span'); chip.className = 's2t-chip';
+        const t = document.createElement('span'); t.className = 'chip-text'; t.textContent = g; t.title = 'Click to edit';
+        t.addEventListener('click', () => startEdit(chip, i, g));
+        const del = document.createElement('button'); del.className = 'chip-del'; del.textContent = '×'; del.title = 'Delete';
+        del.addEventListener('click', (e) => { e.stopPropagation(); sendCtl({cmd:'delete_gloss', index:i}); });
+        chip.appendChild(t); chip.appendChild(del);
+        glossEl.appendChild(chip);
+      });
+      if (glossArr.length){
+        const clr = document.createElement('button'); clr.className = 's2t-chip-clear'; clr.textContent = 'clear';
+        clr.title = 'Clear the whole transcript';
+        clr.addEventListener('click', () => sendCtl({cmd:'clear'}));
+        glossEl.appendChild(clr);
+      }
+    }
+    function startEdit(chip, i, g){
+      editing = true;
+      chip.innerHTML = '';
+      const inp = document.createElement('input'); inp.className = 'chip-edit'; inp.value = g;
+      chip.appendChild(inp); inp.focus(); inp.select();
+      let done = false;
+      const finish = (commit) => {
+        if (done) return; done = true; editing = false;
+        if (commit){
+          const v = inp.value.trim();
+          if (v && v.toUpperCase().replace(/ /g,'_') !== g) sendCtl({cmd:'edit_gloss', index:i, value:v});
+          else renderGloss(pendingGloss || glossArr);
+        } else {
+          renderGloss(pendingGloss || glossArr);
+        }
+        pendingGloss = null;
+      };
+      inp.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter'){ e.preventDefault(); finish(true); }
+        else if (e.key === 'Escape'){ e.preventDefault(); finish(false); }
+      });
+      inp.addEventListener('blur', () => finish(true));
+    }
+
+    // ---------- history ----------
+    function fmt(d){ try { return d.toLocaleTimeString([], {hour:'2-digit', minute:'2-digit', second:'2-digit'}); } catch(e){ return ''; } }
+    function addHistory(text){ history.push({text, t:new Date()}); renderHistory(); }
+    function renderHistory(){
+      histEmpty.hidden = history.length > 0;
+      histBadge.hidden = history.length === 0;
+      histBadge.textContent = history.length;
+      histList.innerHTML = '';
+      history.forEach((h) => {
+        const li = document.createElement('li'); li.className = 's2t-histitem';
+        const main = document.createElement('div'); main.className = 'histitem-main';
+        const txt = document.createElement('div'); txt.className = 'histitem-text'; txt.textContent = h.text;
+        const tm  = document.createElement('div'); tm.className = 'histitem-time'; tm.textContent = fmt(h.t);
+        main.appendChild(txt); main.appendChild(tm);
+        const acts = document.createElement('div'); acts.className = 'histitem-acts';
+        const cp = document.createElement('button'); cp.className = 's2t-iconmini'; cp.title = 'Copy';
+        cp.innerHTML = '<svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>';
+        cp.addEventListener('click', () => copyText(h.text));
+        const rp = document.createElement('button'); rp.className = 's2t-iconmini'; rp.title = 'Replay (speak)';
+        rp.innerHTML = '<svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
+        rp.addEventListener('click', () => { lastSpokenText = h.text; speak(h.text); });
+        acts.appendChild(cp); acts.appendChild(rp);
+        li.appendChild(main); li.appendChild(acts);
+        histList.appendChild(li);
+      });
+      histList.scrollTop = histList.scrollHeight;
+    }
+
+    // ---------- WebSocket ----------
+    function wsOpen(){ return ws && ws.readyState === WebSocket.OPEN; }
+    function connectWS(){
+      if (reconnectTimer){ clearTimeout(reconnectTimer); reconnectTimer = null; }
+      ws = new WebSocket(`ws://${location.host}/ws`);
+      ws.onopen  = () => { setRecordingUI(false); };
+      ws.onclose = () => { setRecordingUI(false); reconnectTimer = setTimeout(connectWS, 700); };
+      ws.onerror = () => {};
+      ws.onmessage = (evt) => {
+        const d = JSON.parse(evt.data);
+        if (d.type === "status"){
+          if (typeof d.recording === "boolean") setRecordingUI(d.recording);
+          if (d.phase) setPhase(d.phase);
+          if (d.spoken && d.spoken.length) spokenEl.textContent = d.spoken.join(" ");
+          if (d.gloss) renderGloss(d.gloss);
+          return;
+        }
+        if (d.type === "phase"){ setPhase(d.phase); return; }
+        if (d.type === "word"){ hintLine.textContent=''; renderGloss(d.gloss); return; }
+        if (d.type === "gloss_update"){ renderGloss(d.gloss); if (d.spoken) spokenEl.textContent = d.spoken.length ? d.spoken.join(" ") : spokenEl.textContent; return; }
+        if (d.type === "low_conf"){
+          hintLine.innerHTML = '<span class="unsure">≈ ' + d.word + ' (' + Math.round(d.conf*100) + '%)</span>';
+          return;
+        }
+        if (d.type === "dropped"){
+          hintLine.innerHTML = '<span class="unsure">didn\u2019t catch that — sign a bit longer</span>';
+          return;
+        }
+        if (d.type === "spoken"){
+          spokenEl.textContent = d.spoken.join(" ");
+          renderGloss(d.gloss);
+          if (d.text && d.text !== lastSpokenText){ lastSpokenText = d.text; speak(d.text); addHistory(d.text); }
+          return;
+        }
+        if (d.type === "end"){ setRecordingUI(false); return; }
+        if (d.type === "queue"){ queueDepth = d.depth || 0; renderState(); return; }
+      };
+    }
+    function send(cmd, value){
+      const payload = JSON.stringify({ type:"control", cmd, value });
+      if (wsOpen()) ws.send(payload);
+      else if (!ws || ws.readyState === WebSocket.CLOSED) connectWS();
+    }
+    function sendCtl(obj){
+      const payload = JSON.stringify(Object.assign({ type:"control" }, obj));
+      if (wsOpen()) ws.send(payload);
+    }
+
+    // ---------- UI state ----------
+    let currentPhase = "LISTENING";
+    let queueDepth = 0;
+    function renderState(){
+      if (!recording || currentPhase === "IDLE"){ statePill.hidden = true; recDot.hidden = true; return; }
+      statePill.hidden = false; recDot.hidden = false;
+      statePill.className = "s2t-state " + currentPhase.toLowerCase();
+      recDot.className = "s2t-recdot " + currentPhase.toLowerCase();
+      const base = currentPhase === "CAPTURING" ? "Signing…" : "Listening";
+      stateText.textContent = queueDepth > 0 ? `${base}  ·  recognizing ${queueDepth}` : base;
+    }
+    function setPhase(phase){ currentPhase = phase; renderState(); }
+
+    function setRecordingUI(on){
+      recording = on;
+      toggleBtn.classList.toggle('start', !on);
+      toggleBtn.classList.toggle('stop', on);
+      toggleBtn.setAttribute('aria-label', on ? 'Stop' : 'Start');
+      icoStart.hidden = on; icoStop.hidden = !on;
+      hint.hidden = on;
+      if (!on){ queueDepth = 0; statePill.hidden = true; recDot.hidden = true; }
+    }
+
+    // ---------- controls ----------
+    toggleBtn.onclick = () => {
+      if (recording){ send("stop"); stopSpeech(); }
+      else { spokenEl.textContent = "Listening…"; hintLine.textContent=''; lastSpokenText = ""; send("start"); }
+    };
+    ttsBtn.onclick = () => {
+      ttsOn = !ttsOn; ttsBtn.classList.toggle('on', ttsOn);
+      spkOn.hidden = !ttsOn; spkOff.hidden = ttsOn;
+      if (!ttsOn) stopSpeech();
+    };
+    mirrorBtn.onclick = () => {
+      const on = previewWrap.classList.toggle('mirrored');
+      mirrorBtn.classList.toggle('on', on);
+    };
+    histToggle.onclick = () => { drawer.hidden = !drawer.hidden; };
+    histClose.onclick  = () => { drawer.hidden = true; };
+    copyAllBtn.onclick = () => copyText(history.map(h => h.text).join("\n"));
+    clearHistBtn.onclick = () => { history.length = 0; renderHistory(); };
+
+    document.addEventListener("keydown", (e) => {
+      if (e.target && (e.target.tagName === 'INPUT' || e.target.isContentEditable)) return;
+      if (e.code === "Space"){ e.preventDefault(); toggleBtn.click(); }
+    });
+
+    renderHistory();
+    connectWS();
+  })();
+  </script>
+</body>
+</html>

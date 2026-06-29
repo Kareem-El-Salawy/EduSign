@@ -1,0 +1,559 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Text → Sign • Local Sign Learning Lab</title>
+  <link rel="stylesheet" href="/static/css/app.css?v=20260620-1">
+  <style>
+  .gloss-chip {
+    display: inline-block;
+    padding: 6px 10px;
+    margin: 4px 4px 4px 0;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.14);
+    background: rgba(255,255,255,0.06);
+    color: var(--muted);
+    font-family: monospace;
+    transition: 0.2s ease;
+  }
+
+  .gloss-chip.active {
+    color: #ffffff;
+    background: rgba(70, 160, 255, 0.35);
+    border-color: rgba(120, 190, 255, 0.8);
+    box-shadow: 0 0 14px rgba(80, 170, 255, 0.35);
+  }
+  .main-video-frame {
+  width: 100%;
+  height: 420px;
+  border-radius: 12px;
+  background: #000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-video-frame video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #000;
+}
+
+  #signVideoPlayer {
+    transition: opacity 0.18s ease;
+  }
+
+  .sign-library-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+    margin-top: 14px;
+  }
+
+  .sign-clip-card {
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(5,10,25,0.45);
+    padding: 12px;
+  }
+
+  .sign-clip-card video {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: #000;
+  }
+
+  .sign-clip-card button {
+    margin-top: 8px;
+  }
+</style>
+</head>
+
+<body>
+  <div class="container fadeIn">
+
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Local Sign Learning Lab</h1>
+          <p>Text → Sign</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a class="pill" data-nav href="/">Home</a>
+        <a class="pill" data-nav href="/sign-to-text">Sign → Text</a>
+        <a class="pill" data-nav href="/text-to-sign">Text → Sign</a>
+        <a class="pill" data-nav href="/video-lookup">Video Lookup</a>
+      </nav>
+    </header>
+
+    <section style="margin-top: 28px; margin-bottom: 14px;">
+      <h2 style="margin-bottom: 6px;">Text → Sign</h2>
+      <p style="margin-top: 0; color: var(--muted);">
+        Convert written text into a gloss sequence and play the corresponding sign videos.
+      </p>
+    </section>
+
+    <section style="display: grid; grid-template-columns: 2fr 1fr; gap: 16px; align-items: start;">
+
+      <!-- LEFT PANEL -->
+      <div class="card">
+        <div class="inner">
+
+          <div class="ctaRow" style="margin-bottom: 18px;">
+            <strong>TEXT INPUT</strong>
+            <span class="pill">Gloss + Video Sequence</span>
+          </div>
+
+          <textarea
+            id="textInput"
+            placeholder="Example: hello I please thank you"
+            style="
+              width: 100%;
+              min-height: 150px;
+              padding: 14px;
+              border-radius: 14px;
+              border: 1px solid rgba(255,255,255,0.14);
+              background: rgba(5,10,25,0.65);
+              color: #fff;
+              font-size: 16px;
+              resize: vertical;
+              outline: none;
+              box-sizing: border-box;
+            "
+          ></textarea>
+
+          <div style="display: flex; gap: 10px; align-items: center; margin-top: 14px; flex-wrap: wrap;">
+            <button onclick="convertTextToSign()">Convert</button>
+            <button onclick="stopTextToSignVideo()" style="opacity: 0.75;">Stop</button>
+            <button onclick="replayTextToSignVideo()" style="opacity: 0.75;">Replay</button>
+
+            <span style="margin-left: auto; color: var(--muted); font-size: 13px;">
+              Controls:
+              <span class="k">Enter</span> Convert
+            </span>
+          </div>
+
+          <div style="
+            margin-top: 16px;
+            border-radius: 14px;
+            border: 1px solid rgba(255,255,255,0.12);
+            background: rgba(5,10,25,0.45);
+            padding: 12px;
+          ">
+            <div style="font-size: 13px; color: var(--muted); margin-bottom: 8px;">Video Preview</div>
+
+            <div class="main-video-frame">
+  <video
+    id="signVideoPlayer"
+    controls
+  ></video>
+</div>
+          </div>
+
+          <div style="
+            margin-top: 14px;
+            border-radius: 14px;
+            border: 1px solid rgba(255,255,255,0.12);
+            background: rgba(5,10,25,0.45);
+            padding: 12px;
+          ">
+            <div style="font-size: 13px; color: var(--muted);">Status</div>
+            <div id="textToSignStatus" style="margin-top: 6px; font-family: monospace;">
+              Status: idle
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- RIGHT PANEL -->
+      <div class="card">
+        <div class="inner">
+
+          <div class="ctaRow" style="margin-bottom: 14px;">
+            <strong>OUTPUTS</strong>
+            <span class="pill">Gloss + Assets</span>
+          </div>
+
+          <div style="
+            border-radius: 14px;
+            border: 1px solid rgba(255,255,255,0.12);
+            background: rgba(5,10,25,0.45);
+            padding: 12px;
+            margin-bottom: 10px;
+          ">
+            <div style="font-size: 13px; color: var(--muted);">Gloss sequence</div>
+            <div id="glossOutput" style="margin-top: 8px; font-family: monospace;">
+              -
+            </div>
+          </div>
+
+          <div style="
+            border-radius: 14px;
+            border: 1px solid rgba(255,255,255,0.12);
+            background: rgba(5,10,25,0.45);
+            padding: 12px;
+            margin-bottom: 10px;
+          ">
+            <div style="font-size: 13px; color: var(--muted);">Missing words</div>
+            <div id="missingOutput" style="margin-top: 8px; font-family: monospace;">
+              -
+            </div>
+          </div>
+
+          <div style="
+            border-radius: 14px;
+            border: 1px solid rgba(255,255,255,0.12);
+            background: rgba(5,10,25,0.45);
+            padding: 12px;
+            margin-bottom: 10px;
+          ">
+            <div style="font-size: 13px; color: var(--muted);">Current video</div>
+            <div id="currentVideoOutput" style="margin-top: 8px; font-family: monospace;">
+              -
+            </div>
+          </div>
+
+          <div style="
+            border-radius: 14px;
+            border: 1px solid rgba(255,255,255,0.12);
+            background: rgba(5,10,25,0.45);
+            padding: 12px;
+          ">
+            <div style="font-size: 13px; color: var(--muted);">Logs</div>
+            <div id="textToSignLogs" style="margin-top: 8px; font-family: monospace; white-space: pre-line;">
+              Text to Sign ready
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <section class="card" style="margin-top: 16px;">
+  <div class="inner">
+    <div class="ctaRow" style="margin-bottom: 14px;">
+      <strong>TRANSLATED SIGN CLIPS</strong>
+      <span class="pill">Sentence Output</span>
+    </div>
+
+
+    <div id="signLibraryGrid" class="sign-library-grid">
+      Type a sentence and press Convert to view the matched clips.
+    </div>
+  </div>
+</section>
+  </div>
+
+  <script src="/static/js/app.js?v=20260620-1"></script>
+
+  <script>
+  let textToSignVideos = [];
+  let textToSignMatches = [];
+  let currentVideoIndex = 0;
+  let nextVideoPreloader = null;
+
+  function escapeHTML(value) {
+    return String(value)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+  }
+
+  async function convertTextToSign() {
+    const textInput = document.getElementById("textInput");
+    const glossOutput = document.getElementById("glossOutput");
+    const missingOutput = document.getElementById("missingOutput");
+    const statusOutput = document.getElementById("textToSignStatus");
+    const logsOutput = document.getElementById("textToSignLogs");
+
+    const text = textInput.value.trim();
+
+    if (!text) {
+      glossOutput.innerHTML = "-";
+      missingOutput.innerHTML = "-";
+      statusOutput.innerHTML = "Status: no input";
+      logsOutput.innerHTML = "Please type a sentence first.";
+      return;
+    }
+
+    statusOutput.innerHTML = "Status: converting...";
+    logsOutput.innerHTML = "Sending text to backend...";
+
+    try {
+      const response = await fetch("/api/text-to-sign", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ text: text })
+      });
+
+      if (!response.ok) {
+        const message = await response.text();
+        throw new Error(`Backend returned ${response.status}: ${message}`);
+      }
+
+      const data = await response.json();
+      console.log("Text-to-Sign backend response:", data);
+
+      textToSignVideos = data.videos || [];
+      textToSignMatches = data.matched || [];
+      currentVideoIndex = 0;
+
+      renderGlossChips(textToSignMatches);
+      renderTranslatedClips(textToSignMatches);
+      if (data.missing_words && data.missing_words.length > 0) {
+        missingOutput.innerHTML = data.missing_words.map(escapeHTML).join(", ");
+      } else {
+        missingOutput.innerHTML = "-";
+      }
+
+      logsOutput.innerHTML =
+      "Method: " + (data.method || "unknown") +
+      "\nMatched videos: " + textToSignVideos.length +
+      "\nMissing words/meanings: " + (data.missing_words || []).length +
+       "\nIgnored words: " + (data.ignored_words || []).join(", ");
+
+      if (textToSignVideos.length > 0) {
+        statusOutput.innerHTML = "Status: playing sequence";
+        playCurrentTextToSignVideo();
+      } else {
+        statusOutput.innerHTML = "Status: no matching videos";
+        stopTextToSignVideo();
+      }
+
+    } catch (error) {
+      console.error(error);
+      statusOutput.innerHTML = "Status: error";
+      logsOutput.innerHTML = "Error converting text to sign.";
+    }
+  }
+
+  function renderGlossChips(matches) {
+    const glossOutput = document.getElementById("glossOutput");
+
+    if (!matches || matches.length === 0) {
+      glossOutput.innerHTML = "-";
+      return;
+    }
+
+    glossOutput.innerHTML = matches.map((item, index) => {
+      return `
+        <span class="gloss-chip" id="glossChip-${index}">
+          ${escapeHTML(item.gloss)}
+        </span>
+      `;
+    }).join("");
+  }
+
+  function renderTranslatedClips(matches) {
+  const grid = document.getElementById("signLibraryGrid");
+
+  if (!grid) {
+    return;
+  }
+
+  if (!matches || matches.length === 0) {
+    grid.innerHTML = "No matched clips found for this sentence.";
+    return;
+  }
+
+  grid.innerHTML = matches.map((item, index) => {
+    return `
+      <div class="sign-clip-card">
+        <strong>${index + 1}. ${escapeHTML(item.gloss)}</strong>
+
+        <div style="color: var(--muted); font-size: 12px; margin-top: 4px;">
+          From text: ${escapeHTML(item.input_text)}
+        </div>
+
+        <video src="${escapeHTML(item.video)}" controls preload="metadata"></video>
+
+        <button onclick="replayLibraryClip(this)">Replay</button>
+      </div>
+    `;
+  }).join("");
+}
+
+  function highlightCurrentGloss(index) {
+    const chips = document.querySelectorAll(".gloss-chip");
+
+    chips.forEach(chip => {
+      chip.classList.remove("active");
+    });
+
+    const activeChip = document.getElementById("glossChip-" + index);
+
+    if (activeChip) {
+      activeChip.classList.add("active");
+    }
+  }
+
+  function preloadNextVideo() {
+    const nextIndex = currentVideoIndex + 1;
+
+    if (nextIndex >= textToSignVideos.length) {
+      nextVideoPreloader = null;
+      return;
+    }
+
+    nextVideoPreloader = document.createElement("video");
+    nextVideoPreloader.src = textToSignVideos[nextIndex];
+    nextVideoPreloader.preload = "auto";
+    nextVideoPreloader.load();
+  }
+
+  function playCurrentTextToSignVideo() {
+    const player = document.getElementById("signVideoPlayer");
+    const currentVideoOutput = document.getElementById("currentVideoOutput");
+    const statusOutput = document.getElementById("textToSignStatus");
+
+    if (!player || !textToSignVideos || textToSignVideos.length === 0) {
+      return;
+    }
+
+    const videoPath = textToSignVideos[currentVideoIndex];
+
+    highlightCurrentGloss(currentVideoIndex);
+    preloadNextVideo();
+
+    currentVideoOutput.innerHTML =
+      (currentVideoIndex + 1) + " / " + textToSignVideos.length + " — " + escapeHTML(videoPath);
+
+    player.style.opacity = "0";
+
+    setTimeout(() => {
+      player.src = videoPath;
+      player.load();
+
+      player.oncanplay = function () {
+        player.style.opacity = "1";
+
+        player.play().catch(() => {
+          statusOutput.innerHTML = "Status: press play on the video";
+        });
+
+        player.oncanplay = null;
+      };
+
+      player.onended = function () {
+        currentVideoIndex++;
+
+        if (currentVideoIndex < textToSignVideos.length) {
+          playCurrentTextToSignVideo();
+        } else {
+          statusOutput.innerHTML = "Status: sequence finished";
+          highlightCurrentGloss(-1);
+        }
+      };
+    }, 120);
+  }
+
+  function stopTextToSignVideo() {
+    const player = document.getElementById("signVideoPlayer");
+    const currentVideoOutput = document.getElementById("currentVideoOutput");
+    const statusOutput = document.getElementById("textToSignStatus");
+
+    if (player) {
+      player.pause();
+      player.removeAttribute("src");
+      player.load();
+      player.style.opacity = "1";
+    }
+
+    currentVideoIndex = 0;
+    highlightCurrentGloss(-1);
+
+    if (currentVideoOutput) {
+      currentVideoOutput.innerHTML = "-";
+    }
+
+    if (statusOutput) {
+      statusOutput.innerHTML = "Status: stopped";
+    }
+  }
+
+  function replayTextToSignVideo() {
+    if (!textToSignVideos || textToSignVideos.length === 0) {
+      return;
+    }
+
+    currentVideoIndex = 0;
+    playCurrentTextToSignVideo();
+  }
+
+  async function loadSignLibrary() {
+    const grid = document.getElementById("signLibraryGrid");
+
+    if (!grid) {
+      return;
+    }
+
+    grid.innerHTML = "Loading sign clips...";
+
+    try {
+      const response = await fetch("/api/sign-assets");
+      const data = await response.json();
+
+      const assets = data.assets || [];
+
+      if (assets.length === 0) {
+        grid.innerHTML = "No sign clips found.";
+        return;
+      }
+
+      grid.innerHTML = assets.map(asset => {
+        return `
+          <div class="sign-clip-card">
+            <strong>${escapeHTML(asset.gloss)}</strong>
+            <div style="color: var(--muted); font-size: 12px; margin-top: 4px;">
+              Also typed as: ${asset.aliases.map(escapeHTML).join(", ")}
+            </div>
+
+            <video src="${escapeHTML(asset.video)}" controls preload="metadata"></video>
+
+            <button onclick="replayLibraryClip(this)">Replay</button>
+          </div>
+        `;
+      }).join("");
+
+    } catch (error) {
+      console.error(error);
+      grid.innerHTML = "Error loading sign library.";
+    }
+  }
+
+  function replayLibraryClip(button) {
+    const card = button.closest(".sign-clip-card");
+    const video = card.querySelector("video");
+
+    if (!video) {
+      return;
+    }
+
+    video.currentTime = 0;
+    video.play();
+  }
+
+  const textInput = document.getElementById("textInput");
+
+  if (textInput) {
+    textInput.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" && !event.shiftKey) {
+        event.preventDefault();
+        convertTextToSign();
+      }
+    });
+  }
+
+</script>

@@ -1,0 +1,3978 @@
+{
+  "drink": {
+    "gloss": "drink",
+    "video": "/archive-videos/17721.mp4",
+    "video_id": "17721",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "before": {
+    "gloss": "before",
+    "video": "/archive-videos/05739.mp4",
+    "video_id": "05739",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "go": {
+    "gloss": "go",
+    "video": "/archive-videos/24955.mp4",
+    "video_id": "24955",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "deaf": {
+    "gloss": "deaf",
+    "video": "/archive-videos/14893.mp4",
+    "video_id": "14893",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "help": {
+    "gloss": "help",
+    "video": "/archive-videos/27213.mp4",
+    "video_id": "27213",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "no": {
+    "gloss": "no",
+    "video": "/archive-videos/38532.mp4",
+    "video_id": "38532",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "thin": {
+    "gloss": "thin",
+    "video": "/archive-videos/57948.mp4",
+    "video_id": "57948",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "walk": {
+    "gloss": "walk",
+    "video": "/archive-videos/62168.mp4",
+    "video_id": "62168",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "yes": {
+    "gloss": "yes",
+    "video": "/archive-videos/64291.mp4",
+    "video_id": "64291",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "all": {
+    "gloss": "all",
+    "video": "/archive-videos/01991.mp4",
+    "video_id": "01991",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "cool": {
+    "gloss": "cool",
+    "video": "/archive-videos/13213.mp4",
+    "video_id": "13213",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "finish": {
+    "gloss": "finish",
+    "video": "/archive-videos/21949.mp4",
+    "video_id": "21949",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "thanksgiving": {
+    "gloss": "thanksgiving",
+    "video": "/archive-videos/57638.mp4",
+    "video_id": "57638",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "what": {
+    "gloss": "what",
+    "video": "/archive-videos/62975.mp4",
+    "video_id": "62975",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "bed": {
+    "gloss": "bed",
+    "video": "/archive-videos/05636.mp4",
+    "video_id": "05636",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "blue": {
+    "gloss": "blue",
+    "video": "/archive-videos/06839.mp4",
+    "video_id": "06839",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "dog": {
+    "gloss": "dog",
+    "video": "/archive-videos/17090.mp4",
+    "video_id": "17090",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "hat": {
+    "gloss": "hat",
+    "video": "/archive-videos/26717.mp4",
+    "video_id": "26717",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "shirt": {
+    "gloss": "shirt",
+    "video": "/archive-videos/51063.mp4",
+    "video_id": "51063",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "study": {
+    "gloss": "study",
+    "video": "/archive-videos/55368.mp4",
+    "video_id": "55368",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "accident": {
+    "gloss": "accident",
+    "video": "/archive-videos/00631.mp4",
+    "video_id": "00631",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "bird": {
+    "gloss": "bird",
+    "video": "/archive-videos/06337.mp4",
+    "video_id": "06337",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "doctor": {
+    "gloss": "doctor",
+    "video": "/archive-videos/17019.mp4",
+    "video_id": "17019",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "give": {
+    "gloss": "give",
+    "video": "/archive-videos/24649.mp4",
+    "video_id": "24649",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "pink": {
+    "gloss": "pink",
+    "video": "/archive-videos/42836.mp4",
+    "video_id": "42836",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "short": {
+    "gloss": "short",
+    "video": "/archive-videos/51231.mp4",
+    "video_id": "51231",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "time": {
+    "gloss": "time",
+    "video": "/archive-videos/58502.mp4",
+    "video_id": "58502",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "basketball": {
+    "gloss": "basketball",
+    "video": "/archive-videos/05238.mp4",
+    "video_id": "05238",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "but": {
+    "gloss": "but",
+    "video": "/archive-videos/08429.mp4",
+    "video_id": "08429",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "decide": {
+    "gloss": "decide",
+    "video": "/archive-videos/15037.mp4",
+    "video_id": "15037",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "full": {
+    "gloss": "full",
+    "video": "/archive-videos/23774.mp4",
+    "video_id": "23774",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "jacket": {
+    "gloss": "jacket",
+    "video": "/archive-videos/30840.mp4",
+    "video_id": "30840",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "pull": {
+    "gloss": "pull",
+    "video": "/archive-videos/45267.mp4",
+    "video_id": "45267",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "right": {
+    "gloss": "right",
+    "video": "/archive-videos/48114.mp4",
+    "video_id": "48114",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "water": {
+    "gloss": "water",
+    "video": "/archive-videos/62505.mp4",
+    "video_id": "62505",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "wife": {
+    "gloss": "wife",
+    "video": "/archive-videos/63332.mp4",
+    "video_id": "63332",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "cat": {
+    "gloss": "cat",
+    "video": "/archive-videos/09532.mp4",
+    "video_id": "09532",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "check": {
+    "gloss": "check",
+    "video": "/archive-videos/10190.mp4",
+    "video_id": "10190",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "hair": {
+    "gloss": "hair",
+    "video": "/archive-videos/26166.mp4",
+    "video_id": "26166",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "inform": {
+    "gloss": "inform",
+    "video": "/archive-videos/29655.mp4",
+    "video_id": "29655",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "knife": {
+    "gloss": "knife",
+    "video": "/archive-videos/31848.mp4",
+    "video_id": "31848",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "laugh": {
+    "gloss": "laugh",
+    "video": "/archive-videos/32388.mp4",
+    "video_id": "32388",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "rabbit": {
+    "gloss": "rabbit",
+    "video": "/archive-videos/45842.mp4",
+    "video_id": "45842",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "yesterday": {
+    "gloss": "yesterday",
+    "video": "/archive-videos/64311.mp4",
+    "video_id": "64311",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "bathroom": {
+    "gloss": "bathroom",
+    "video": "/archive-videos/05303.mp4",
+    "video_id": "05303",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "blanket": {
+    "gloss": "blanket",
+    "video": "/archive-videos/06558.mp4",
+    "video_id": "06558",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "cold": {
+    "gloss": "cold",
+    "video": "/archive-videos/11633.mp4",
+    "video_id": "11633",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "copy": {
+    "gloss": "copy",
+    "video": "/archive-videos/13275.mp4",
+    "video_id": "13275",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "far": {
+    "gloss": "far",
+    "video": "/archive-videos/21077.mp4",
+    "video_id": "21077",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "happy": {
+    "gloss": "happy",
+    "video": "/archive-videos/26530.mp4",
+    "video_id": "26530",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "leave": {
+    "gloss": "leave",
+    "video": "/archive-videos/32667.mp4",
+    "video_id": "32667",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "list": {
+    "gloss": "list",
+    "video": "/archive-videos/33479.mp4",
+    "video_id": "33479",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "person": {
+    "gloss": "person",
+    "video": "/archive-videos/42231.mp4",
+    "video_id": "42231",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "soon": {
+    "gloss": "soon",
+    "video": "/archive-videos/53300.mp4",
+    "video_id": "53300",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "test": {
+    "gloss": "test",
+    "video": "/archive-videos/57534.mp4",
+    "video_id": "57534",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "you": {
+    "gloss": "you",
+    "video": "/archive-videos/64385.mp4",
+    "video_id": "64385",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "balance": {
+    "gloss": "balance",
+    "video": "/archive-videos/04801.mp4",
+    "video_id": "04801",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "business": {
+    "gloss": "business",
+    "video": "/archive-videos/08372.mp4",
+    "video_id": "08372",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "chat": {
+    "gloss": "chat",
+    "video": "/archive-videos/10109.mp4",
+    "video_id": "10109",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "clock": {
+    "gloss": "clock",
+    "video": "/archive-videos/11203.mp4",
+    "video_id": "11203",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "convince": {
+    "gloss": "convince",
+    "video": "/archive-videos/13143.mp4",
+    "video_id": "13143",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "country": {
+    "gloss": "country",
+    "video": "/archive-videos/13549.mp4",
+    "video_id": "13549",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "crash": {
+    "gloss": "crash",
+    "video": "/archive-videos/13804.mp4",
+    "video_id": "13804",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "discuss": {
+    "gloss": "discuss",
+    "video": "/archive-videos/16591.mp4",
+    "video_id": "16591",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "drive": {
+    "gloss": "drive",
+    "video": "/archive-videos/17766.mp4",
+    "video_id": "17766",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "fat": {
+    "gloss": "fat",
+    "video": "/archive-videos/21241.mp4",
+    "video_id": "21241",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "government": {
+    "gloss": "government",
+    "video": "/archive-videos/25250.mp4",
+    "video_id": "25250",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "hear": {
+    "gloss": "hear",
+    "video": "/archive-videos/26950.mp4",
+    "video_id": "26950",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "hope": {
+    "gloss": "hope",
+    "video": "/archive-videos/27929.mp4",
+    "video_id": "27929",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "house": {
+    "gloss": "house",
+    "video": "/archive-videos/28164.mp4",
+    "video_id": "28164",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "husband": {
+    "gloss": "husband",
+    "video": "/archive-videos/28469.mp4",
+    "video_id": "28469",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "join": {
+    "gloss": "join",
+    "video": "/archive-videos/31157.mp4",
+    "video_id": "31157",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "make": {
+    "gloss": "make",
+    "video": "/archive-videos/34583.mp4",
+    "video_id": "34583",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "mean": {
+    "gloss": "mean",
+    "video": "/archive-videos/35298.mp4",
+    "video_id": "35298",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "office": {
+    "gloss": "office",
+    "video": "/archive-videos/39462.mp4",
+    "video_id": "39462",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "practice": {
+    "gloss": "practice",
+    "video": "/archive-videos/44085.mp4",
+    "video_id": "44085",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "president": {
+    "gloss": "president",
+    "video": "/archive-videos/44373.mp4",
+    "video_id": "44373",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "restaurant": {
+    "gloss": "restaurant",
+    "video": "/archive-videos/47661.mp4",
+    "video_id": "47661",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "ride": {
+    "gloss": "ride",
+    "video": "/archive-videos/48050.mp4",
+    "video_id": "48050",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "sign": {
+    "gloss": "sign",
+    "video": "/archive-videos/51628.mp4",
+    "video_id": "51628",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "some": {
+    "gloss": "some",
+    "video": "/archive-videos/53212.mp4",
+    "video_id": "53212",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "war": {
+    "gloss": "war",
+    "video": "/archive-videos/62279.mp4",
+    "video_id": "62279",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "always": {
+    "gloss": "always",
+    "video": "/archive-videos/02233.mp4",
+    "video_id": "02233",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "argue": {
+    "gloss": "argue",
+    "video": "/archive-videos/03277.mp4",
+    "video_id": "03277",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "bath": {
+    "gloss": "bath",
+    "video": "/archive-videos/05280.mp4",
+    "video_id": "05280",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "crazy": {
+    "gloss": "crazy",
+    "video": "/archive-videos/13858.mp4",
+    "video_id": "13858",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "delicious": {
+    "gloss": "delicious",
+    "video": "/archive-videos/15369.mp4",
+    "video_id": "15369",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "disappear": {
+    "gloss": "disappear",
+    "video": "/archive-videos/16443.mp4",
+    "video_id": "16443",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "egg": {
+    "gloss": "egg",
+    "video": "/archive-videos/18494.mp4",
+    "video_id": "18494",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "halloween": {
+    "gloss": "halloween",
+    "video": "/archive-videos/26259.mp4",
+    "video_id": "26259",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "humble": {
+    "gloss": "humble",
+    "video": "/archive-videos/28314.mp4",
+    "video_id": "28314",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "hurry": {
+    "gloss": "hurry",
+    "video": "/archive-videos/28429.mp4",
+    "video_id": "28429",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "internet": {
+    "gloss": "internet",
+    "video": "/archive-videos/30239.mp4",
+    "video_id": "30239",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "jump": {
+    "gloss": "jump",
+    "video": "/archive-videos/31320.mp4",
+    "video_id": "31320",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "potato": {
+    "gloss": "potato",
+    "video": "/archive-videos/43935.mp4",
+    "video_id": "43935",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "save": {
+    "gloss": "save",
+    "video": "/archive-videos/49378.mp4",
+    "video_id": "49378",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "secret": {
+    "gloss": "secret",
+    "video": "/archive-videos/50058.mp4",
+    "video_id": "50058",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "silly": {
+    "gloss": "silly",
+    "video": "/archive-videos/51708.mp4",
+    "video_id": "51708",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "sleep": {
+    "gloss": "sleep",
+    "video": "/archive-videos/52320.mp4",
+    "video_id": "52320",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "straight": {
+    "gloss": "straight",
+    "video": "/archive-videos/55048.mp4",
+    "video_id": "55048",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "talk": {
+    "gloss": "talk",
+    "video": "/archive-videos/56821.mp4",
+    "video_id": "56821",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "tent": {
+    "gloss": "tent",
+    "video": "/archive-videos/57441.mp4",
+    "video_id": "57441",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "throw": {
+    "gloss": "throw",
+    "video": "/archive-videos/58300.mp4",
+    "video_id": "58300",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "understand": {
+    "gloss": "understand",
+    "video": "/archive-videos/60551.mp4",
+    "video_id": "60551",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "wet": {
+    "gloss": "wet",
+    "video": "/archive-videos/62927.mp4",
+    "video_id": "62927",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "age": {
+    "gloss": "age",
+    "video": "/archive-videos/01489.mp4",
+    "video_id": "01489",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "appointment": {
+    "gloss": "appointment",
+    "video": "/archive-videos/03061.mp4",
+    "video_id": "03061",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "basement": {
+    "gloss": "basement",
+    "video": "/archive-videos/05198.mp4",
+    "video_id": "05198",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "bored": {
+    "gloss": "bored",
+    "video": "/archive-videos/07196.mp4",
+    "video_id": "07196",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "cafeteria": {
+    "gloss": "cafeteria",
+    "video": "/archive-videos/08592.mp4",
+    "video_id": "08592",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "chicken": {
+    "gloss": "chicken",
+    "video": "/archive-videos/10400.mp4",
+    "video_id": "10400",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "child": {
+    "gloss": "child",
+    "video": "/archive-videos/10449.mp4",
+    "video_id": "10449",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "choose": {
+    "gloss": "choose",
+    "video": "/archive-videos/10632.mp4",
+    "video_id": "10632",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "cookie": {
+    "gloss": "cookie",
+    "video": "/archive-videos/13179.mp4",
+    "video_id": "13179",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "cup": {
+    "gloss": "cup",
+    "video": "/archive-videos/14291.mp4",
+    "video_id": "14291",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "cut": {
+    "gloss": "cut",
+    "video": "/archive-videos/14477.mp4",
+    "video_id": "14477",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "deer": {
+    "gloss": "deer",
+    "video": "/archive-videos/15176.mp4",
+    "video_id": "15176",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "dry": {
+    "gloss": "dry",
+    "video": "/archive-videos/17935.mp4",
+    "video_id": "17935",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "earring": {
+    "gloss": "earring",
+    "video": "/archive-videos/18225.mp4",
+    "video_id": "18225",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "english": {
+    "gloss": "english",
+    "video": "/archive-videos/19236.mp4",
+    "video_id": "19236",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "expensive": {
+    "gloss": "expensive",
+    "video": "/archive-videos/20369.mp4",
+    "video_id": "20369",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "explain": {
+    "gloss": "explain",
+    "video": "/archive-videos/20440.mp4",
+    "video_id": "20440",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "fight": {
+    "gloss": "fight",
+    "video": "/archive-videos/21704.mp4",
+    "video_id": "21704",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "floor": {
+    "gloss": "floor",
+    "video": "/archive-videos/22499.mp4",
+    "video_id": "22499",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "follow": {
+    "gloss": "follow",
+    "video": "/archive-videos/22720.mp4",
+    "video_id": "22720",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "from": {
+    "gloss": "from",
+    "video": "/archive-videos/23642.mp4",
+    "video_id": "23642",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "hit": {
+    "gloss": "hit",
+    "video": "/archive-videos/27596.mp4",
+    "video_id": "27596",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "investigate": {
+    "gloss": "investigate",
+    "video": "/archive-videos/30474.mp4",
+    "video_id": "30474",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "jealous": {
+    "gloss": "jealous",
+    "video": "/archive-videos/30984.mp4",
+    "video_id": "30984",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "rain": {
+    "gloss": "rain",
+    "video": "/archive-videos/45998.mp4",
+    "video_id": "45998",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "research": {
+    "gloss": "research",
+    "video": "/archive-videos/47496.mp4",
+    "video_id": "47496",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "score": {
+    "gloss": "score",
+    "video": "/archive-videos/49699.mp4",
+    "video_id": "49699",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "speech": {
+    "gloss": "speech",
+    "video": "/archive-videos/53706.mp4",
+    "video_id": "53706",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "star": {
+    "gloss": "star",
+    "video": "/archive-videos/54443.mp4",
+    "video_id": "54443",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "struggle": {
+    "gloss": "struggle",
+    "video": "/archive-videos/55304.mp4",
+    "video_id": "55304",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "tiger": {
+    "gloss": "tiger",
+    "video": "/archive-videos/58450.mp4",
+    "video_id": "58450",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "toast": {
+    "gloss": "toast",
+    "video": "/archive-videos/58657.mp4",
+    "video_id": "58657",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "toilet": {
+    "gloss": "toilet",
+    "video": "/archive-videos/58736.mp4",
+    "video_id": "58736",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "truck": {
+    "gloss": "truck",
+    "video": "/archive-videos/59768.mp4",
+    "video_id": "59768",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "allow": {
+    "gloss": "allow",
+    "video": "/archive-videos/02048.mp4",
+    "video_id": "02048",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "any": {
+    "gloss": "any",
+    "video": "/archive-videos/02828.mp4",
+    "video_id": "02828",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "awful": {
+    "gloss": "awful",
+    "video": "/archive-videos/04429.mp4",
+    "video_id": "04429",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "awkward": {
+    "gloss": "awkward",
+    "video": "/archive-videos/04443.mp4",
+    "video_id": "04443",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "bark": {
+    "gloss": "bark",
+    "video": "/archive-videos/05113.mp4",
+    "video_id": "05113",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "bedroom": {
+    "gloss": "bedroom",
+    "video": "/archive-videos/05656.mp4",
+    "video_id": "05656",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "belt": {
+    "gloss": "belt",
+    "video": "/archive-videos/05928.mp4",
+    "video_id": "05928",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "compare": {
+    "gloss": "compare",
+    "video": "/archive-videos/12118.mp4",
+    "video_id": "12118",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "contact": {
+    "gloss": "contact",
+    "video": "/archive-videos/12876.mp4",
+    "video_id": "12876",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "correct": {
+    "gloss": "correct",
+    "video": "/archive-videos/13354.mp4",
+    "video_id": "13354",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "desert": {
+    "gloss": "desert",
+    "video": "/archive-videos/15728.mp4",
+    "video_id": "15728",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "easter": {
+    "gloss": "easter",
+    "video": "/archive-videos/18279.mp4",
+    "video_id": "18279",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "elevator": {
+    "gloss": "elevator",
+    "video": "/archive-videos/18796.mp4",
+    "video_id": "18796",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "enter": {
+    "gloss": "enter",
+    "video": "/archive-videos/19330.mp4",
+    "video_id": "19330",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "experience": {
+    "gloss": "experience",
+    "video": "/archive-videos/20383.mp4",
+    "video_id": "20383",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "feed": {
+    "gloss": "feed",
+    "video": "/archive-videos/21411.mp4",
+    "video_id": "21411",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "form": {
+    "gloss": "form",
+    "video": "/archive-videos/23050.mp4",
+    "video_id": "23050",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "great": {
+    "gloss": "great",
+    "video": "/archive-videos/25631.mp4",
+    "video_id": "25631",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "hammer": {
+    "gloss": "hammer",
+    "video": "/archive-videos/26317.mp4",
+    "video_id": "26317",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "history": {
+    "gloss": "history",
+    "video": "/archive-videos/27575.mp4",
+    "video_id": "27575",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "hurt": {
+    "gloss": "hurt",
+    "video": "/archive-videos/28445.mp4",
+    "video_id": "28445",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "lobster": {
+    "gloss": "lobster",
+    "video": "/archive-videos/33646.mp4",
+    "video_id": "33646",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "love": {
+    "gloss": "love",
+    "video": "/archive-videos/34127.mp4",
+    "video_id": "34127",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "outside": {
+    "gloss": "outside",
+    "video": "/archive-videos/40474.mp4",
+    "video_id": "40474",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "pig": {
+    "gloss": "pig",
+    "video": "/archive-videos/42706.mp4",
+    "video_id": "42706",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "present": {
+    "gloss": "present",
+    "video": "/archive-videos/44344.mp4",
+    "video_id": "44344",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "prison": {
+    "gloss": "prison",
+    "video": "/archive-videos/44606.mp4",
+    "video_id": "44606",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "respect": {
+    "gloss": "respect",
+    "video": "/archive-videos/47611.mp4",
+    "video_id": "47611",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "smart": {
+    "gloss": "smart",
+    "video": "/archive-videos/52584.mp4",
+    "video_id": "52584",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "smile": {
+    "gloss": "smile",
+    "video": "/archive-videos/52621.mp4",
+    "video_id": "52621",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "soft": {
+    "gloss": "soft",
+    "video": "/archive-videos/53070.mp4",
+    "video_id": "53070",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "sound": {
+    "gloss": "sound",
+    "video": "/archive-videos/53420.mp4",
+    "video_id": "53420",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "spain": {
+    "gloss": "spain",
+    "video": "/archive-videos/53552.mp4",
+    "video_id": "53552",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "spray": {
+    "gloss": "spray",
+    "video": "/archive-videos/54080.mp4",
+    "video_id": "54080",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "stomach": {
+    "gloss": "stomach",
+    "video": "/archive-videos/54882.mp4",
+    "video_id": "54882",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "strange": {
+    "gloss": "strange",
+    "video": "/archive-videos/55074.mp4",
+    "video_id": "55074",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "sweetheart": {
+    "gloss": "sweetheart",
+    "video": "/archive-videos/56300.mp4",
+    "video_id": "56300",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "tease": {
+    "gloss": "tease",
+    "video": "/archive-videos/57139.mp4",
+    "video_id": "57139",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "therapy": {
+    "gloss": "therapy",
+    "video": "/archive-videos/57807.mp4",
+    "video_id": "57807",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "thirsty": {
+    "gloss": "thirsty",
+    "video": "/archive-videos/58029.mp4",
+    "video_id": "58029",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "ticket": {
+    "gloss": "ticket",
+    "video": "/archive-videos/58392.mp4",
+    "video_id": "58392",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "top": {
+    "gloss": "top",
+    "video": "/archive-videos/58940.mp4",
+    "video_id": "58940",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "wedding": {
+    "gloss": "wedding",
+    "video": "/archive-videos/62694.mp4",
+    "video_id": "62694",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "wind": {
+    "gloss": "wind",
+    "video": "/archive-videos/63407.mp4",
+    "video_id": "63407",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "world": {
+    "gloss": "world",
+    "video": "/archive-videos/63837.mp4",
+    "video_id": "63837",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "wow": {
+    "gloss": "wow",
+    "video": "/archive-videos/63962.mp4",
+    "video_id": "63962",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "already": {
+    "gloss": "already",
+    "video": "/archive-videos/02165.mp4",
+    "video_id": "02165",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "and": {
+    "gloss": "and",
+    "video": "/archive-videos/02521.mp4",
+    "video_id": "02521",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "asia": {
+    "gloss": "asia",
+    "video": "/archive-videos/03568.mp4",
+    "video_id": "03568",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "ask": {
+    "gloss": "ask",
+    "video": "/archive-videos/03603.mp4",
+    "video_id": "03603",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "bald": {
+    "gloss": "bald",
+    "video": "/archive-videos/04826.mp4",
+    "video_id": "04826",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "barely": {
+    "gloss": "barely",
+    "video": "/archive-videos/05069.mp4",
+    "video_id": "05069",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "bite": {
+    "gloss": "bite",
+    "video": "/archive-videos/06414.mp4",
+    "video_id": "06414",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "boat": {
+    "gloss": "boat",
+    "video": "/archive-videos/06935.mp4",
+    "video_id": "06935",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "borrow": {
+    "gloss": "borrow",
+    "video": "/archive-videos/07230.mp4",
+    "video_id": "07230",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "boss": {
+    "gloss": "boss",
+    "video": "/archive-videos/07243.mp4",
+    "video_id": "07243",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "calm": {
+    "gloss": "calm",
+    "video": "/archive-videos/08752.mp4",
+    "video_id": "08752",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "cancel": {
+    "gloss": "cancel",
+    "video": "/archive-videos/08865.mp4",
+    "video_id": "08865",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "comb": {
+    "gloss": "comb",
+    "video": "/archive-videos/11823.mp4",
+    "video_id": "11823",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "comfortable": {
+    "gloss": "comfortable",
+    "video": "/archive-videos/11908.mp4",
+    "video_id": "11908",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "destroy": {
+    "gloss": "destroy",
+    "video": "/archive-videos/15831.mp4",
+    "video_id": "15831",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "diamond": {
+    "gloss": "diamond",
+    "video": "/archive-videos/16069.mp4",
+    "video_id": "16069",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "dream": {
+    "gloss": "dream",
+    "video": "/archive-videos/17633.mp4",
+    "video_id": "17633",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "early": {
+    "gloss": "early",
+    "video": "/archive-videos/18178.mp4",
+    "video_id": "18178",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "fact": {
+    "gloss": "fact",
+    "video": "/archive-videos/20746.mp4",
+    "video_id": "20746",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "forest": {
+    "gloss": "forest",
+    "video": "/archive-videos/22917.mp4",
+    "video_id": "22917",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "goal": {
+    "gloss": "goal",
+    "video": "/archive-videos/24875.mp4",
+    "video_id": "24875",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "gone": {
+    "gloss": "gone",
+    "video": "/archive-videos/25033.mp4",
+    "video_id": "25033",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "group": {
+    "gloss": "group",
+    "video": "/archive-videos/25829.mp4",
+    "video_id": "25829",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "hamburger": {
+    "gloss": "hamburger",
+    "video": "/archive-videos/26300.mp4",
+    "video_id": "26300",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "her": {
+    "gloss": "her",
+    "video": "/archive-videos/27279.mp4",
+    "video_id": "27279",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "ignore": {
+    "gloss": "ignore",
+    "video": "/archive-videos/28780.mp4",
+    "video_id": "28780",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "insurance": {
+    "gloss": "insurance",
+    "video": "/archive-videos/30057.mp4",
+    "video_id": "30057",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "lecture": {
+    "gloss": "lecture",
+    "video": "/archive-videos/32699.mp4",
+    "video_id": "32699",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "listen": {
+    "gloss": "listen",
+    "video": "/archive-videos/33460.mp4",
+    "video_id": "33460",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "maybe": {
+    "gloss": "maybe",
+    "video": "/archive-videos/35222.mp4",
+    "video_id": "35222",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "mouse": {
+    "gloss": "mouse",
+    "video": "/archive-videos/37046.mp4",
+    "video_id": "37046",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "nervous": {
+    "gloss": "nervous",
+    "video": "/archive-videos/38019.mp4",
+    "video_id": "38019",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "nose": {
+    "gloss": "nose",
+    "video": "/archive-videos/38733.mp4",
+    "video_id": "38733",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "often": {
+    "gloss": "often",
+    "video": "/archive-videos/39511.mp4",
+    "video_id": "39511",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "pillow": {
+    "gloss": "pillow",
+    "video": "/archive-videos/42753.mp4",
+    "video_id": "42753",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "promise": {
+    "gloss": "promise",
+    "video": "/archive-videos/44900.mp4",
+    "video_id": "44900",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "rise": {
+    "gloss": "rise",
+    "video": "/archive-videos/48216.mp4",
+    "video_id": "48216",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "rough": {
+    "gloss": "rough",
+    "video": "/archive-videos/48610.mp4",
+    "video_id": "48610",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "sheep": {
+    "gloss": "sheep",
+    "video": "/archive-videos/50938.mp4",
+    "video_id": "50938",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "shock": {
+    "gloss": "shock",
+    "video": "/archive-videos/51107.mp4",
+    "video_id": "51107",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "skinny": {
+    "gloss": "skinny",
+    "video": "/archive-videos/52175.mp4",
+    "video_id": "52175",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "skirt": {
+    "gloss": "skirt",
+    "video": "/archive-videos/52203.mp4",
+    "video_id": "52203",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "stand": {
+    "gloss": "stand",
+    "video": "/archive-videos/54381.mp4",
+    "video_id": "54381",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "steal": {
+    "gloss": "steal",
+    "video": "/archive-videos/54597.mp4",
+    "video_id": "54597",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "stupid": {
+    "gloss": "stupid",
+    "video": "/archive-videos/55425.mp4",
+    "video_id": "55425",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "swallow": {
+    "gloss": "swallow",
+    "video": "/archive-videos/56198.mp4",
+    "video_id": "56198",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "triangle": {
+    "gloss": "triangle",
+    "video": "/archive-videos/59602.mp4",
+    "video_id": "59602",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "violin": {
+    "gloss": "violin",
+    "video": "/archive-videos/61742.mp4",
+    "video_id": "61742",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "attention": {
+    "gloss": "attention",
+    "video": "/archive-videos/04015.mp4",
+    "video_id": "04015",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "away": {
+    "gloss": "away",
+    "video": "/archive-videos/04393.mp4",
+    "video_id": "04393",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "bicycle": {
+    "gloss": "bicycle",
+    "video": "/archive-videos/06163.mp4",
+    "video_id": "06163",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "brush": {
+    "gloss": "brush",
+    "video": "/archive-videos/08005.mp4",
+    "video_id": "08005",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "camp": {
+    "gloss": "camp",
+    "video": "/archive-videos/08820.mp4",
+    "video_id": "08820",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "climb": {
+    "gloss": "climb",
+    "video": "/archive-videos/11148.mp4",
+    "video_id": "11148",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "community": {
+    "gloss": "community",
+    "video": "/archive-videos/12066.mp4",
+    "video_id": "12066",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "contribute": {
+    "gloss": "contribute",
+    "video": "/archive-videos/13023.mp4",
+    "video_id": "13023",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "curious": {
+    "gloss": "curious",
+    "video": "/archive-videos/14316.mp4",
+    "video_id": "14316",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "describe": {
+    "gloss": "describe",
+    "video": "/archive-videos/15711.mp4",
+    "video_id": "15711",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "dissolve": {
+    "gloss": "dissolve",
+    "video": "/archive-videos/16808.mp4",
+    "video_id": "16808",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "double": {
+    "gloss": "double",
+    "video": "/archive-videos/17381.mp4",
+    "video_id": "17381",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "doubt": {
+    "gloss": "doubt",
+    "video": "/archive-videos/17394.mp4",
+    "video_id": "17394",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "dumb": {
+    "gloss": "dumb",
+    "video": "/archive-videos/17992.mp4",
+    "video_id": "17992",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "earth": {
+    "gloss": "earth",
+    "video": "/archive-videos/18245.mp4",
+    "video_id": "18245",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "earthquake": {
+    "gloss": "earthquake",
+    "video": "/archive-videos/18258.mp4",
+    "video_id": "18258",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "embarrass": {
+    "gloss": "embarrass",
+    "video": "/archive-videos/18900.mp4",
+    "video_id": "18900",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "encourage": {
+    "gloss": "encourage",
+    "video": "/archive-videos/19092.mp4",
+    "video_id": "19092",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "evidence": {
+    "gloss": "evidence",
+    "video": "/archive-videos/19974.mp4",
+    "video_id": "19974",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "exact": {
+    "gloss": "exact",
+    "video": "/archive-videos/20012.mp4",
+    "video_id": "20012",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "expect": {
+    "gloss": "expect",
+    "video": "/archive-videos/20339.mp4",
+    "video_id": "20339",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "goodbye": {
+    "gloss": "goodbye",
+    "video": "/archive-videos/25052.mp4",
+    "video_id": "25052",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "grow": {
+    "gloss": "grow",
+    "video": "/archive-videos/25850.mp4",
+    "video_id": "25850",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "if": {
+    "gloss": "if",
+    "video": "/archive-videos/28743.mp4",
+    "video_id": "28743",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "information": {
+    "gloss": "information",
+    "video": "/archive-videos/29636.mp4",
+    "video_id": "29636",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "invite": {
+    "gloss": "invite",
+    "video": "/archive-videos/30514.mp4",
+    "video_id": "30514",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "keyboard": {
+    "gloss": "keyboard",
+    "video": "/archive-videos/31559.mp4",
+    "video_id": "31559",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "line": {
+    "gloss": "line",
+    "video": "/archive-videos/33341.mp4",
+    "video_id": "33341",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "machine": {
+    "gloss": "machine",
+    "video": "/archive-videos/34357.mp4",
+    "video_id": "34357",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "mouth": {
+    "gloss": "mouth",
+    "video": "/archive-videos/37065.mp4",
+    "video_id": "37065",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "napkin": {
+    "gloss": "napkin",
+    "video": "/archive-videos/37616.mp4",
+    "video_id": "37616",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "pain": {
+    "gloss": "pain",
+    "video": "/archive-videos/40806.mp4",
+    "video_id": "40806",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "policy": {
+    "gloss": "policy",
+    "video": "/archive-videos/43557.mp4",
+    "video_id": "43557",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "predict": {
+    "gloss": "predict",
+    "video": "/archive-videos/44206.mp4",
+    "video_id": "44206",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "presentation": {
+    "gloss": "presentation",
+    "video": "/archive-videos/44329.mp4",
+    "video_id": "44329",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "private": {
+    "gloss": "private",
+    "video": "/archive-videos/44628.mp4",
+    "video_id": "44628",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "prove": {
+    "gloss": "prove",
+    "video": "/archive-videos/45104.mp4",
+    "video_id": "45104",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "provide": {
+    "gloss": "provide",
+    "video": "/archive-videos/45113.mp4",
+    "video_id": "45113",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "psychology": {
+    "gloss": "psychology",
+    "video": "/archive-videos/45177.mp4",
+    "video_id": "45177",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "rainbow": {
+    "gloss": "rainbow",
+    "video": "/archive-videos/45971.mp4",
+    "video_id": "45971",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "rehearse": {
+    "gloss": "rehearse",
+    "video": "/archive-videos/46960.mp4",
+    "video_id": "46960",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "revenge": {
+    "gloss": "revenge",
+    "video": "/archive-videos/47862.mp4",
+    "video_id": "47862",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "separate": {
+    "gloss": "separate",
+    "video": "/archive-videos/50439.mp4",
+    "video_id": "50439",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "service": {
+    "gloss": "service",
+    "video": "/archive-videos/50553.mp4",
+    "video_id": "50553",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "stairs": {
+    "gloss": "stairs",
+    "video": "/archive-videos/54302.mp4",
+    "video_id": "54302",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "straw": {
+    "gloss": "straw",
+    "video": "/archive-videos/55123.mp4",
+    "video_id": "55123",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "support": {
+    "gloss": "support",
+    "video": "/archive-videos/55981.mp4",
+    "video_id": "55981",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "suppose": {
+    "gloss": "suppose",
+    "video": "/archive-videos/55999.mp4",
+    "video_id": "55999",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "surprise": {
+    "gloss": "surprise",
+    "video": "/archive-videos/56108.mp4",
+    "video_id": "56108",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "taste": {
+    "gloss": "taste",
+    "video": "/archive-videos/56975.mp4",
+    "video_id": "56975",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "touch": {
+    "gloss": "touch",
+    "video": "/archive-videos/59055.mp4",
+    "video_id": "59055",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "type": {
+    "gloss": "type",
+    "video": "/archive-videos/60308.mp4",
+    "video_id": "60308",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "welcome": {
+    "gloss": "welcome",
+    "video": "/archive-videos/62833.mp4",
+    "video_id": "62833",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "worm": {
+    "gloss": "worm",
+    "video": "/archive-videos/63853.mp4",
+    "video_id": "63853",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "above": {
+    "gloss": "above",
+    "video": "/archive-videos/00433.mp4",
+    "video_id": "00433",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "appropriate": {
+    "gloss": "appropriate",
+    "video": "/archive-videos/03105.mp4",
+    "video_id": "03105",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "arrogant": {
+    "gloss": "arrogant",
+    "video": "/archive-videos/03454.mp4",
+    "video_id": "03454",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "behavior": {
+    "gloss": "behavior",
+    "video": "/archive-videos/05796.mp4",
+    "video_id": "05796",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "bell": {
+    "gloss": "bell",
+    "video": "/archive-videos/05877.mp4",
+    "video_id": "05877",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "breathe": {
+    "gloss": "breathe",
+    "video": "/archive-videos/07680.mp4",
+    "video_id": "07680",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "category": {
+    "gloss": "category",
+    "video": "/archive-videos/09493.mp4",
+    "video_id": "09493",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "catholic": {
+    "gloss": "catholic",
+    "video": "/archive-videos/09521.mp4",
+    "video_id": "09521",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "clever": {
+    "gloss": "clever",
+    "video": "/archive-videos/11091.mp4",
+    "video_id": "11091",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "clown": {
+    "gloss": "clown",
+    "video": "/archive-videos/11382.mp4",
+    "video_id": "11382",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "coat": {
+    "gloss": "coat",
+    "video": "/archive-videos/11473.mp4",
+    "video_id": "11473",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "control": {
+    "gloss": "control",
+    "video": "/archive-videos/13046.mp4",
+    "video_id": "13046",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "count": {
+    "gloss": "count",
+    "video": "/archive-videos/13534.mp4",
+    "video_id": "13534",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "each": {
+    "gloss": "each",
+    "video": "/archive-videos/18113.mp4",
+    "video_id": "18113",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "electrician": {
+    "gloss": "electrician",
+    "video": "/archive-videos/18723.mp4",
+    "video_id": "18723",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "england": {
+    "gloss": "england",
+    "video": "/archive-videos/19226.mp4",
+    "video_id": "19226",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "flood": {
+    "gloss": "flood",
+    "video": "/archive-videos/22485.mp4",
+    "video_id": "22485",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "fork": {
+    "gloss": "fork",
+    "video": "/archive-videos/23009.mp4",
+    "video_id": "23009",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "fun": {
+    "gloss": "fun",
+    "video": "/archive-videos/23857.mp4",
+    "video_id": "23857",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "general": {
+    "gloss": "general",
+    "video": "/archive-videos/24253.mp4",
+    "video_id": "24253",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "give up": {
+    "gloss": "give up",
+    "video": "/archive-videos/24685.mp4",
+    "video_id": "24685",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "heavy": {
+    "gloss": "heavy",
+    "video": "/archive-videos/27099.mp4",
+    "video_id": "27099",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "hold": {
+    "gloss": "hold",
+    "video": "/archive-videos/27665.mp4",
+    "video_id": "27665",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "hug": {
+    "gloss": "hug",
+    "video": "/archive-videos/28263.mp4",
+    "video_id": "28263",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "interpreter": {
+    "gloss": "interpreter",
+    "video": "/archive-videos/30260.mp4",
+    "video_id": "30260",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "left": {
+    "gloss": "left",
+    "video": "/archive-videos/32728.mp4",
+    "video_id": "32728",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "lend": {
+    "gloss": "lend",
+    "video": "/archive-videos/32827.mp4",
+    "video_id": "32827",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "odd": {
+    "gloss": "odd",
+    "video": "/archive-videos/39382.mp4",
+    "video_id": "39382",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "pocket": {
+    "gloss": "pocket",
+    "video": "/archive-videos/43384.mp4",
+    "video_id": "43384",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "proof": {
+    "gloss": "proof",
+    "video": "/archive-videos/44953.mp4",
+    "video_id": "44953",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "recognize": {
+    "gloss": "recognize",
+    "video": "/archive-videos/46592.mp4",
+    "video_id": "46592",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "refuse": {
+    "gloss": "refuse",
+    "video": "/archive-videos/46867.mp4",
+    "video_id": "46867",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "responsibility": {
+    "gloss": "responsibility",
+    "video": "/archive-videos/47643.mp4",
+    "video_id": "47643",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "ring": {
+    "gloss": "ring",
+    "video": "/archive-videos/48166.mp4",
+    "video_id": "48166",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "rob": {
+    "gloss": "rob",
+    "video": "/archive-videos/48334.mp4",
+    "video_id": "48334",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "rush": {
+    "gloss": "rush",
+    "video": "/archive-videos/48893.mp4",
+    "video_id": "48893",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "search": {
+    "gloss": "search",
+    "video": "/archive-videos/49936.mp4",
+    "video_id": "49936",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "selfish": {
+    "gloss": "selfish",
+    "video": "/archive-videos/50249.mp4",
+    "video_id": "50249",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "serve": {
+    "gloss": "serve",
+    "video": "/archive-videos/50534.mp4",
+    "video_id": "50534",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "she": {
+    "gloss": "she",
+    "video": "/archive-videos/50951.mp4",
+    "video_id": "50951",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "shelf": {
+    "gloss": "shelf",
+    "video": "/archive-videos/50960.mp4",
+    "video_id": "50960",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "sign language": {
+    "gloss": "sign language",
+    "video": "/archive-videos/51662.mp4",
+    "video_id": "51662",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "snob": {
+    "gloss": "snob",
+    "video": "/archive-videos/52800.mp4",
+    "video_id": "52800",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "specific": {
+    "gloss": "specific",
+    "video": "/archive-videos/53670.mp4",
+    "video_id": "53670",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "subway": {
+    "gloss": "subway",
+    "video": "/archive-videos/55557.mp4",
+    "video_id": "55557",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "suffer": {
+    "gloss": "suffer",
+    "video": "/archive-videos/55640.mp4",
+    "video_id": "55640",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "terrible": {
+    "gloss": "terrible",
+    "video": "/archive-videos/57489.mp4",
+    "video_id": "57489",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "through": {
+    "gloss": "through",
+    "video": "/archive-videos/58278.mp4",
+    "video_id": "58278",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "trouble": {
+    "gloss": "trouble",
+    "video": "/archive-videos/59741.mp4",
+    "video_id": "59741",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "weird": {
+    "gloss": "weird",
+    "video": "/archive-videos/62821.mp4",
+    "video_id": "62821",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "wide": {
+    "gloss": "wide",
+    "video": "/archive-videos/63314.mp4",
+    "video_id": "63314",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "wonderful": {
+    "gloss": "wonderful",
+    "video": "/archive-videos/63693.mp4",
+    "video_id": "63693",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "abdomen": {
+    "gloss": "abdomen",
+    "video": "/archive-videos/00338.mp4",
+    "video_id": "00338",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "action": {
+    "gloss": "action",
+    "video": "/archive-videos/00855.mp4",
+    "video_id": "00855",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "active": {
+    "gloss": "active",
+    "video": "/archive-videos/00871.mp4",
+    "video_id": "00871",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "activity": {
+    "gloss": "activity",
+    "video": "/archive-videos/00894.mp4",
+    "video_id": "00894",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "address": {
+    "gloss": "address",
+    "video": "/archive-videos/01018.mp4",
+    "video_id": "01018",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "aim": {
+    "gloss": "aim",
+    "video": "/archive-videos/01646.mp4",
+    "video_id": "01646",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "amazing": {
+    "gloss": "amazing",
+    "video": "/archive-videos/02276.mp4",
+    "video_id": "02276",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "apart": {
+    "gloss": "apart",
+    "video": "/archive-videos/02867.mp4",
+    "video_id": "02867",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "attend": {
+    "gloss": "attend",
+    "video": "/archive-videos/04002.mp4",
+    "video_id": "04002",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "babysitter": {
+    "gloss": "babysitter",
+    "video": "/archive-videos/04533.mp4",
+    "video_id": "04533",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "battle": {
+    "gloss": "battle",
+    "video": "/archive-videos/05372.mp4",
+    "video_id": "05372",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "bike": {
+    "gloss": "bike",
+    "video": "/archive-videos/06216.mp4",
+    "video_id": "06216",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "broke": {
+    "gloss": "broke",
+    "video": "/archive-videos/07879.mp4",
+    "video_id": "07879",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "cabbage": {
+    "gloss": "cabbage",
+    "video": "/archive-videos/08535.mp4",
+    "video_id": "08535",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "cabinet": {
+    "gloss": "cabinet",
+    "video": "/archive-videos/08546.mp4",
+    "video_id": "08546",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "camping": {
+    "gloss": "camping",
+    "video": "/archive-videos/08827.mp4",
+    "video_id": "08827",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "careless": {
+    "gloss": "careless",
+    "video": "/archive-videos/09220.mp4",
+    "video_id": "09220",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "circle": {
+    "gloss": "circle",
+    "video": "/archive-videos/10817.mp4",
+    "video_id": "10817",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "company": {
+    "gloss": "company",
+    "video": "/archive-videos/12104.mp4",
+    "video_id": "12104",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "connect": {
+    "gloss": "connect",
+    "video": "/archive-videos/12678.mp4",
+    "video_id": "12678",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "crab": {
+    "gloss": "crab",
+    "video": "/archive-videos/13737.mp4",
+    "video_id": "13737",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "cruel": {
+    "gloss": "cruel",
+    "video": "/archive-videos/14131.mp4",
+    "video_id": "14131",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "crush": {
+    "gloss": "crush",
+    "video": "/archive-videos/14162.mp4",
+    "video_id": "14162",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "disgust": {
+    "gloss": "disgust",
+    "video": "/archive-videos/16644.mp4",
+    "video_id": "16644",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "downstairs": {
+    "gloss": "downstairs",
+    "video": "/archive-videos/17460.mp4",
+    "video_id": "17460",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "eighteen": {
+    "gloss": "eighteen",
+    "video": "/archive-videos/18554.mp4",
+    "video_id": "18554",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "engagement": {
+    "gloss": "engagement",
+    "video": "/archive-videos/19192.mp4",
+    "video_id": "19192",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "engineer": {
+    "gloss": "engineer",
+    "video": "/archive-videos/19203.mp4",
+    "video_id": "19203",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "expand": {
+    "gloss": "expand",
+    "video": "/archive-videos/20318.mp4",
+    "video_id": "20318",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "eyes": {
+    "gloss": "eyes",
+    "video": "/archive-videos/20665.mp4",
+    "video_id": "20665",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "flute": {
+    "gloss": "flute",
+    "video": "/archive-videos/22614.mp4",
+    "video_id": "22614",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "forbid": {
+    "gloss": "forbid",
+    "video": "/archive-videos/22846.mp4",
+    "video_id": "22846",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "french fries": {
+    "gloss": "french fries",
+    "video": "/archive-videos/23473.mp4",
+    "video_id": "23473",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "gas": {
+    "gloss": "gas",
+    "video": "/archive-videos/24125.mp4",
+    "video_id": "24125",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "gasoline": {
+    "gloss": "gasoline",
+    "video": "/archive-videos/24136.mp4",
+    "video_id": "24136",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "generation": {
+    "gloss": "generation",
+    "video": "/archive-videos/24271.mp4",
+    "video_id": "24271",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "geography": {
+    "gloss": "geography",
+    "video": "/archive-videos/24334.mp4",
+    "video_id": "24334",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "identify": {
+    "gloss": "identify",
+    "video": "/archive-videos/28680.mp4",
+    "video_id": "28680",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "include": {
+    "gloss": "include",
+    "video": "/archive-videos/29281.mp4",
+    "video_id": "29281",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "infection": {
+    "gloss": "infection",
+    "video": "/archive-videos/29566.mp4",
+    "video_id": "29566",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "involve": {
+    "gloss": "involve",
+    "video": "/archive-videos/30526.mp4",
+    "video_id": "30526",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "jail": {
+    "gloss": "jail",
+    "video": "/archive-videos/30878.mp4",
+    "video_id": "30878",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "joke": {
+    "gloss": "joke",
+    "video": "/archive-videos/31181.mp4",
+    "video_id": "31181",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "kneel": {
+    "gloss": "kneel",
+    "video": "/archive-videos/31836.mp4",
+    "video_id": "31836",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "lift": {
+    "gloss": "lift",
+    "video": "/archive-videos/33170.mp4",
+    "video_id": "33170",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "manage": {
+    "gloss": "manage",
+    "video": "/archive-videos/34690.mp4",
+    "video_id": "34690",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "motor": {
+    "gloss": "motor",
+    "video": "/archive-videos/37006.mp4",
+    "video_id": "37006",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "network": {
+    "gloss": "network",
+    "video": "/archive-videos/38047.mp4",
+    "video_id": "38047",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "nineteen": {
+    "gloss": "nineteen",
+    "video": "/archive-videos/38399.mp4",
+    "video_id": "38399",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "nut": {
+    "gloss": "nut",
+    "video": "/archive-videos/39118.mp4",
+    "video_id": "39118",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "once": {
+    "gloss": "once",
+    "video": "/archive-videos/39682.mp4",
+    "video_id": "39682",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "paragraph": {
+    "gloss": "paragraph",
+    "video": "/archive-videos/41082.mp4",
+    "video_id": "41082",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "pay attention": {
+    "gloss": "pay attention",
+    "video": "/archive-videos/41584.mp4",
+    "video_id": "41584",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "peanut butter": {
+    "gloss": "peanut butter",
+    "video": "/archive-videos/41696.mp4",
+    "video_id": "41696",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "philadelphia": {
+    "gloss": "philadelphia",
+    "video": "/archive-videos/42381.mp4",
+    "video_id": "42381",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "physician": {
+    "gloss": "physician",
+    "video": "/archive-videos/42544.mp4",
+    "video_id": "42544",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "piece": {
+    "gloss": "piece",
+    "video": "/archive-videos/42667.mp4",
+    "video_id": "42667",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "pity": {
+    "gloss": "pity",
+    "video": "/archive-videos/42945.mp4",
+    "video_id": "42945",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "plant": {
+    "gloss": "plant",
+    "video": "/archive-videos/43083.mp4",
+    "video_id": "43083",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "plenty": {
+    "gloss": "plenty",
+    "video": "/archive-videos/43257.mp4",
+    "video_id": "43257",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "promote": {
+    "gloss": "promote",
+    "video": "/archive-videos/44910.mp4",
+    "video_id": "44910",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "prostitute": {
+    "gloss": "prostitute",
+    "video": "/archive-videos/45054.mp4",
+    "video_id": "45054",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "refer": {
+    "gloss": "refer",
+    "video": "/archive-videos/46795.mp4",
+    "video_id": "46795",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "responsible": {
+    "gloss": "responsible",
+    "video": "/archive-videos/47648.mp4",
+    "video_id": "47648",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "silver": {
+    "gloss": "silver",
+    "video": "/archive-videos/51721.mp4",
+    "video_id": "51721",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "skate": {
+    "gloss": "skate",
+    "video": "/archive-videos/52072.mp4",
+    "video_id": "52072",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "snowman": {
+    "gloss": "snowman",
+    "video": "/archive-videos/52874.mp4",
+    "video_id": "52874",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "spanish": {
+    "gloss": "spanish",
+    "video": "/archive-videos/53564.mp4",
+    "video_id": "53564",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "spring": {
+    "gloss": "spring",
+    "video": "/archive-videos/54121.mp4",
+    "video_id": "54121",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "sympathy": {
+    "gloss": "sympathy",
+    "video": "/archive-videos/56485.mp4",
+    "video_id": "56485",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "take turns": {
+    "gloss": "take turns",
+    "video": "/archive-videos/56766.mp4",
+    "video_id": "56766",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "tender": {
+    "gloss": "tender",
+    "video": "/archive-videos/57371.mp4",
+    "video_id": "57371",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "tranquil": {
+    "gloss": "tranquil",
+    "video": "/archive-videos/59352.mp4",
+    "video_id": "59352",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "twin": {
+    "gloss": "twin",
+    "video": "/archive-videos/60159.mp4",
+    "video_id": "60159",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "within": {
+    "gloss": "within",
+    "video": "/archive-videos/63603.mp4",
+    "video_id": "63603",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "wrap": {
+    "gloss": "wrap",
+    "video": "/archive-videos/63974.mp4",
+    "video_id": "63974",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "advanced": {
+    "gloss": "advanced",
+    "video": "/archive-videos/01229.mp4",
+    "video_id": "01229",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "aid": {
+    "gloss": "aid",
+    "video": "/archive-videos/01626.mp4",
+    "video_id": "01626",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "assist": {
+    "gloss": "assist",
+    "video": "/archive-videos/03768.mp4",
+    "video_id": "03768",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "bank": {
+    "gloss": "bank",
+    "video": "/archive-videos/04974.mp4",
+    "video_id": "04974",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "boil": {
+    "gloss": "boil",
+    "video": "/archive-videos/06972.mp4",
+    "video_id": "06972",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "breakdown": {
+    "gloss": "breakdown",
+    "video": "/archive-videos/07618.mp4",
+    "video_id": "07618",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "breeze": {
+    "gloss": "breeze",
+    "video": "/archive-videos/07702.mp4",
+    "video_id": "07702",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "bush": {
+    "gloss": "bush",
+    "video": "/archive-videos/08343.mp4",
+    "video_id": "08343",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "bye": {
+    "gloss": "bye",
+    "video": "/archive-videos/08512.mp4",
+    "video_id": "08512",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "cheerleader": {
+    "gloss": "cheerleader",
+    "video": "/archive-videos/10252.mp4",
+    "video_id": "10252",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "chicago": {
+    "gloss": "chicago",
+    "video": "/archive-videos/10391.mp4",
+    "video_id": "10391",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "clumsy": {
+    "gloss": "clumsy",
+    "video": "/archive-videos/11422.mp4",
+    "video_id": "11422",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "commit": {
+    "gloss": "commit",
+    "video": "/archive-videos/11997.mp4",
+    "video_id": "11997",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "common sense": {
+    "gloss": "common sense",
+    "video": "/archive-videos/12027.mp4",
+    "video_id": "12027",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "concentrate": {
+    "gloss": "concentrate",
+    "video": "/archive-videos/12394.mp4",
+    "video_id": "12394",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "conversation": {
+    "gloss": "conversation",
+    "video": "/archive-videos/13091.mp4",
+    "video_id": "13091",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "create": {
+    "gloss": "create",
+    "video": "/archive-videos/13880.mp4",
+    "video_id": "13880",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "damage": {
+    "gloss": "damage",
+    "video": "/archive-videos/14606.mp4",
+    "video_id": "14606",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "dancer": {
+    "gloss": "dancer",
+    "video": "/archive-videos/14638.mp4",
+    "video_id": "14638",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "debate": {
+    "gloss": "debate",
+    "video": "/archive-videos/14966.mp4",
+    "video_id": "14966",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "democrat": {
+    "gloss": "democrat",
+    "video": "/archive-videos/15450.mp4",
+    "video_id": "15450",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "descend": {
+    "gloss": "descend",
+    "video": "/archive-videos/15704.mp4",
+    "video_id": "15704",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "discount": {
+    "gloss": "discount",
+    "video": "/archive-videos/16544.mp4",
+    "video_id": "16544",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "done": {
+    "gloss": "done",
+    "video": "/archive-videos/17209.mp4",
+    "video_id": "17209",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "drag": {
+    "gloss": "drag",
+    "video": "/archive-videos/17514.mp4",
+    "video_id": "17514",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "dull": {
+    "gloss": "dull",
+    "video": "/archive-videos/17974.mp4",
+    "video_id": "17974",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "engine": {
+    "gloss": "engine",
+    "video": "/archive-videos/19215.mp4",
+    "video_id": "19215",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "enormous": {
+    "gloss": "enormous",
+    "video": "/archive-videos/19299.mp4",
+    "video_id": "19299",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "fire": {
+    "gloss": "fire",
+    "video": "/archive-videos/22015.mp4",
+    "video_id": "22015",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "fool": {
+    "gloss": "fool",
+    "video": "/archive-videos/22780.mp4",
+    "video_id": "22780",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "geometry": {
+    "gloss": "geometry",
+    "video": "/archive-videos/24347.mp4",
+    "video_id": "24347",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "get up": {
+    "gloss": "get up",
+    "video": "/archive-videos/24502.mp4",
+    "video_id": "24502",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "gift": {
+    "gloss": "gift",
+    "video": "/archive-videos/24553.mp4",
+    "video_id": "24553",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "grab": {
+    "gloss": "grab",
+    "video": "/archive-videos/25279.mp4",
+    "video_id": "25279",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "heart attack": {
+    "gloss": "heart attack",
+    "video": "/archive-videos/27022.mp4",
+    "video_id": "27022",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "hill": {
+    "gloss": "hill",
+    "video": "/archive-videos/27487.mp4",
+    "video_id": "27487",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "hop": {
+    "gloss": "hop",
+    "video": "/archive-videos/27942.mp4",
+    "video_id": "27942",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "human": {
+    "gloss": "human",
+    "video": "/archive-videos/28291.mp4",
+    "video_id": "28291",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "illegal": {
+    "gloss": "illegal",
+    "video": "/archive-videos/28817.mp4",
+    "video_id": "28817",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "impact": {
+    "gloss": "impact",
+    "video": "/archive-videos/29010.mp4",
+    "video_id": "29010",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "inspect": {
+    "gloss": "inspect",
+    "video": "/archive-videos/29900.mp4",
+    "video_id": "29900",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "joy": {
+    "gloss": "joy",
+    "video": "/archive-videos/31236.mp4",
+    "video_id": "31236",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "laundry": {
+    "gloss": "laundry",
+    "video": "/archive-videos/32424.mp4",
+    "video_id": "32424",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "let": {
+    "gloss": "let",
+    "video": "/archive-videos/32916.mp4",
+    "video_id": "32916",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "license": {
+    "gloss": "license",
+    "video": "/archive-videos/33066.mp4",
+    "video_id": "33066",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "little bit": {
+    "gloss": "little bit",
+    "video": "/archive-videos/33519.mp4",
+    "video_id": "33519",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "loan": {
+    "gloss": "loan",
+    "video": "/archive-videos/33612.mp4",
+    "video_id": "33612",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "melt": {
+    "gloss": "melt",
+    "video": "/archive-videos/35570.mp4",
+    "video_id": "35570",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "midnight": {
+    "gloss": "midnight",
+    "video": "/archive-videos/35992.mp4",
+    "video_id": "35992",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "northwest": {
+    "gloss": "northwest",
+    "video": "/archive-videos/38704.mp4",
+    "video_id": "38704",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "not yet": {
+    "gloss": "not yet",
+    "video": "/archive-videos/38949.mp4",
+    "video_id": "38949",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "notice": {
+    "gloss": "notice",
+    "video": "/archive-videos/38875.mp4",
+    "video_id": "38875",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "objective": {
+    "gloss": "objective",
+    "video": "/archive-videos/39201.mp4",
+    "video_id": "39201",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "odor": {
+    "gloss": "odor",
+    "video": "/archive-videos/39390.mp4",
+    "video_id": "39390",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "olympics": {
+    "gloss": "olympics",
+    "video": "/archive-videos/39649.mp4",
+    "video_id": "39649",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "pack": {
+    "gloss": "pack",
+    "video": "/archive-videos/40726.mp4",
+    "video_id": "40726",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "painter": {
+    "gloss": "painter",
+    "video": "/archive-videos/40830.mp4",
+    "video_id": "40830",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "part": {
+    "gloss": "part",
+    "video": "/archive-videos/41265.mp4",
+    "video_id": "41265",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "permit": {
+    "gloss": "permit",
+    "video": "/archive-videos/42142.mp4",
+    "video_id": "42142",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "polar bear": {
+    "gloss": "polar bear",
+    "video": "/archive-videos/43510.mp4",
+    "video_id": "43510",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "precious": {
+    "gloss": "precious",
+    "video": "/archive-videos/44172.mp4",
+    "video_id": "44172",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "precipitation": {
+    "gloss": "precipitation",
+    "video": "/archive-videos/44180.mp4",
+    "video_id": "44180",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "precise": {
+    "gloss": "precise",
+    "video": "/archive-videos/44188.mp4",
+    "video_id": "44188",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "principle": {
+    "gloss": "principle",
+    "video": "/archive-videos/44552.mp4",
+    "video_id": "44552",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "proper": {
+    "gloss": "proper",
+    "video": "/archive-videos/44973.mp4",
+    "video_id": "44973",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "psychologist": {
+    "gloss": "psychologist",
+    "video": "/archive-videos/45166.mp4",
+    "video_id": "45166",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "quarrel": {
+    "gloss": "quarrel",
+    "video": "/archive-videos/45655.mp4",
+    "video_id": "45655",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "regular": {
+    "gloss": "regular",
+    "video": "/archive-videos/46930.mp4",
+    "video_id": "46930",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "restroom": {
+    "gloss": "restroom",
+    "video": "/archive-videos/47724.mp4",
+    "video_id": "47724",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "rose": {
+    "gloss": "rose",
+    "video": "/archive-videos/48569.mp4",
+    "video_id": "48569",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "settle": {
+    "gloss": "settle",
+    "video": "/archive-videos/50584.mp4",
+    "video_id": "50584",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "sixteen": {
+    "gloss": "sixteen",
+    "video": "/archive-videos/51982.mp4",
+    "video_id": "51982",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "skip": {
+    "gloss": "skip",
+    "video": "/archive-videos/52185.mp4",
+    "video_id": "52185",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "solve": {
+    "gloss": "solve",
+    "video": "/archive-videos/53182.mp4",
+    "video_id": "53182",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "spill": {
+    "gloss": "spill",
+    "video": "/archive-videos/53854.mp4",
+    "video_id": "53854",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "spread": {
+    "gloss": "spread",
+    "video": "/archive-videos/54092.mp4",
+    "video_id": "54092",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "surrender": {
+    "gloss": "surrender",
+    "video": "/archive-videos/56117.mp4",
+    "video_id": "56117",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "ten": {
+    "gloss": "ten",
+    "video": "/archive-videos/57395.mp4",
+    "video_id": "57395",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "turn": {
+    "gloss": "turn",
+    "video": "/archive-videos/59991.mp4",
+    "video_id": "59991",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "upstairs": {
+    "gloss": "upstairs",
+    "video": "/archive-videos/60970.mp4",
+    "video_id": "60970",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "vague": {
+    "gloss": "vague",
+    "video": "/archive-videos/61191.mp4",
+    "video_id": "61191",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  },
+  "valley": {
+    "gloss": "valley",
+    "video": "/archive-videos/61224.mp4",
+    "video_id": "61224",
+    "signer_id": 10,
+    "preferred_signer": true,
+    "fallback_signer": false
+  }
+}
